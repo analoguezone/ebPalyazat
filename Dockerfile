@@ -1,6 +1,6 @@
 FROM node:12-alpine 
 
-ENV PORT 4150
+ENV PORT 4160
 
 # Setting working directory. All the path will be relative to WORKDIR
 WORKDIR /usr/src/app
@@ -21,7 +21,7 @@ COPY . .
 # Building app  
 RUN npm run build
 
-EXPOSE 4150
+EXPOSE 4160
 
 
 CMD [ "npm", "run", "start" ]

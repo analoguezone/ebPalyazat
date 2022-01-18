@@ -7,17 +7,16 @@ import Image from "next/image";
 
 import Header from "./Header";
 import FooterContainer from "../components/LandingPage/Footer.jsx";
-import ShoppingCart from "./Product/ShoppingCart";
 
 const theme = {
-  color: "#0560d5",
+  color: "#e20074",
   blueGrey: "#7b98ac",
   lightGrey: "#c8c8c8",
   grey: "#c8c8c8",
   darkGray: "63656a",
   primaryColor: "black",
   primaryColorHighlight: "#7edeb5",
-  backgroundColor: "#0560d5", //#333635
+  backgroundColor: "#262626", //#333635
 };
 
 const layoutStyle = { overflowX: "hidden" };

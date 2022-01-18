@@ -8,18 +8,12 @@ import ContentBlockContainer from "../components/LandingPage/ContentBlockContain
 import styled from "styled-components";
 
 import { NextSeo } from "next-seo";
-import ImageGallery from "react-image-gallery";
+
 import Image from "next/image";
 import Link from "next/link";
 
-import productData from "../data/productData";
-
-import Cart from "./Ecwid/Cart";
-
 import Organizer from "./Organizer";
-import Partnerek from "./Partnerek";
 
-import ProductCard from "./Product/ProductCard";
 import {
   Box,
   Stack,
@@ -111,10 +105,10 @@ function LandingPageContainer(props) {
   return (
     <div>
       <NextSeo
-        title="SafePal Wallet | Kriptovaluta hardver tárca"
+        title="Electronic Beats | Válogatás 2022"
         description="Kényelem és biztonság a kriptoeszközöknek"
         openGraph={{
-          title: " | SafePal Wallet",
+          title: " | Electronic Beats",
           description: "Kényelem és biztonság a kriptoeszközöknek",
           images: [
             {
@@ -124,7 +118,7 @@ function LandingPageContainer(props) {
               alt: "SafePal S1 hardver kriptotárca",
             },
           ],
-          site_name: "SafePal Wallet",
+          site_name: "Electronic Beats",
         }}
       />
 
@@ -138,7 +132,7 @@ function LandingPageContainer(props) {
       <VStack>
         <Heading
           fontWeight="900"
-          // color="#0560d5"
+          // color="#e20074"
           p={["20px 4vw", "100px 4vw"]}
           fontSize={["2rem", "3rem", "4rem", "4rem"]}
           lineHeight={["2rem", "3rem", "4rem", "4rem"]}
@@ -146,15 +140,7 @@ function LandingPageContainer(props) {
           {t("Termékek")}
         </Heading>
 
-        <Organizer>
-          {productData?.map((product) => {
-            return (
-              <ProductCard key={product.productId} product={product}>
-                <Cart productId={product.productId} />
-              </ProductCard>
-            );
-          })}
-        </Organizer>
+        <Organizer></Organizer>
       </VStack>
 
       <section id="23"></section>
@@ -230,14 +216,13 @@ function LandingPageContainer(props) {
       <ContentBlockContainer backgroundColor="white" padding="50px 0">
         <Heading
           fontWeight="900"
-          // color="#0560d5"
+          // color="#e20074"
           p={["20px 4vw", "100px 4vw"]}
           fontSize={["2rem", "3rem", "4rem", "4rem"]}
           lineHeight={["2rem", "3rem", "4rem", "4rem"]}
         >
           {t("Partnerek")}
         </Heading>
-        <Partnerek />
       </ContentBlockContainer>
     </div>
   );

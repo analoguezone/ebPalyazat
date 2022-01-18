@@ -116,20 +116,19 @@ function Hero(props) {
             <ContentBlock style={{ top: "20px" }}>
               <div>
                 <Image
-                  src="/logo/safepal_logo.svg"
-                  width={["60%", "60%", "60%", "55%"]}
+                  src="images/eb/telekom-electronic-beats-logo.svg"
                   p={["10px 4vw", "10px 4vw", "10px 4vw", "20px 4vw"]}
                   color="red"
                 />
                 <Heading
                   fontWeight="900"
-                  color="#0560d5"
+                  color="#e20074"
                   fontSize={["2rem", "3rem", "4rem", "4rem"]}
                   lineHeight={["2rem", "3rem", "4rem", "4rem"]}
                   w={["90vw", "50vw"]}
                   p={["10px 4vw", "20px 4vw"]}
                 >
-                  Biztonság és kényelem bármerre jár
+                  Electronic Beats válogatás 2022
                 </Heading>
 
                 <Text
@@ -138,7 +137,7 @@ function Hero(props) {
                   p={["0px 4vw"]}
                   fontSize={["sm", "sm", "md", "md"]}
                 >
-                  100% offline | 30000+ token | EAL 5+ biztonsági chip
+                  POPPING | CLUBBING | XPERIMENTING
                 </Text>
                 <Box p={["10px 4vw", "20px 4vw"]}>
                   <Button
@@ -169,20 +168,6 @@ function Hero(props) {
                 alt="SafePal Wallet"
                 src="/images/28-min.jpg"
               /> */}
-            {props.isMobile ? (
-              <Img src={mainImage} />
-            ) : (
-              <Video
-                autoPlay
-                loop
-                muted
-                webkit-playsinline
-                playsinline
-                poster={mainImage}
-              >
-                <source src={"images/wallet10s.mp4"} />
-              </Video>
-            )}
 
             <ContentBlock>
               <div>
@@ -194,9 +179,7 @@ function Hero(props) {
                   lineHeight={["2rem", "3rem", "4rem", "4rem"]}
                   textShadow="0px 0px 5px rgba(0, 0, 0, 0.6)"
                   p={["20px 4vw"]}
-                >
-                  SafePal S1
-                </Heading>
+                ></Heading>
 
                 <Text
                   w={["90vw", "50vw"]}
@@ -205,9 +188,7 @@ function Hero(props) {
                   letterSpacing="2px"
                   textShadow="0px 0px 5px rgba(0, 0, 0, 0.6)"
                   p={["0px 4vw"]}
-                >
-                  store | buy | manage | swap | trade | stake
-                </Text>
+                ></Text>
               </div>
             </ContentBlock>
           </VStack>

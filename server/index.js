@@ -13,7 +13,7 @@ const handle = nextApp.getRequestHandler();
 
 const { DESTINATION, createSitemap } = require("./sitemap");
 
-const port = process.env.PORT || 3550;
+const port = process.env.PORT || 3560;
 
 nextApp.prepare().then(async () => {
   const app = express();

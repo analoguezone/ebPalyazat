@@ -8,7 +8,7 @@ function MenuWrapper(props) {
   const { t } = props;
   const menuItems = [
     {
-      title: t("Rólunk"),
+      title: t("Feltételek"),
       // link: "/contact",
       anchor: "#23",
       //TODO oldalon beluli navigacio
@@ -17,7 +17,7 @@ function MenuWrapper(props) {
       allPages: true,
     },
     {
-      title: t("Termékek"),
+      title: t("Műfajok"),
       // link: "/contact",
       anchor: "#termekek",
       //TODO oldalon beluli navigacio
@@ -28,7 +28,7 @@ function MenuWrapper(props) {
       subMenu: [...productData],
     },
     {
-      title: t("Blog"),
+      title: t("Részletek"),
       // link: "/blog",
       // anchor: "#tartalom",
       //TODO oldalon beluli navigacio

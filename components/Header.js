@@ -13,7 +13,6 @@ import LanguageSelector from "./LanguageSelector";
 
 import { withTranslation } from "../server/i18n";
 import { useRouter } from "next/router";
-import ShoppingCart from "./Product/ShoppingCart";
 
 import {
   Box,
@@ -23,6 +22,7 @@ import {
   Image,
   VStack,
   StackDivider,
+  Button,
 } from "@chakra-ui/react";
 
 const MenuItem = styled.div`
@@ -317,7 +317,9 @@ function Header(props) {
           );
         }}
       </MenuWrapper>
-      <ShoppingCart {...props} />
+      <Button backgroundColor="#e20074" color="white" colorScheme="magenta">
+        Jelentkezem
+      </Button>
 
       {/* {!isMobile && <LanguageSelector {...props} />} */}
     </Wrapper>

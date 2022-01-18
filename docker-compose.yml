@@ -5,7 +5,7 @@ services:
     restart: always
     environment:
       - EMAIL_PASSWORD=${EMAIL_PASSWORD}
-      - PORT=4150
+      - PORT=4160
     volumes:
       - docroot:/usr/src/app
 
@@ -13,7 +13,7 @@ services:
     build: proxy
     restart: always
     ports:
-      - "5650:5650"
+      - "5660:5660"
     links:
       - app
     volumes:

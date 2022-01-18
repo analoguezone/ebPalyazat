@@ -46,7 +46,7 @@ const productsContent = {
           <Heading
             textAlign="center"
             fontWeight="900"
-            // color="#0560d5"
+            // color="#e20074"
             p={["20px 50px", "100px 50px"]}
             fontSize={["1.5rem", "1.5rem", "3rem", "3rem"]}
             lineHeight={["1.5rem", "1.5rem", "3rem", "3rem"]}
@@ -80,7 +80,7 @@ const productsContent = {
             <Heading
               fontWeight="900"
               w="100%"
-              // color="#0560d5"
+              // color="#e20074"
               p={["20px 0vw", "20px 0vw"]}
               fontSize={["1.5rem", "1.5rem", "3rem", "3rem"]}
               lineHeight={["1.5rem", "1.5rem", "3rem", "3rem"]}
@@ -94,19 +94,19 @@ const productsContent = {
               w="100%"
             >
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 EAL 5+ biztonsági chip
               </ListItem>{" "}
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 True random véletlen szám generátor
               </ListItem>{" "}
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 Többszörös biztonsági réteg
               </ListItem>{" "}
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 Self-destruct önmegsemmisítő mechanizmus
               </ListItem>
             </List>
@@ -137,7 +137,7 @@ const productsContent = {
             <Heading
               fontWeight="900"
               w="100%"
-              // color="#0560d5"
+              // color="#e20074"
               p={["20px 0vw", "20px 0vw"]}
               fontSize={["1.5rem", "1.5rem", "3rem", "3rem"]}
               lineHeight={["1.5rem", "1.5rem", "3rem", "3rem"]}
@@ -152,19 +152,19 @@ const productsContent = {
               w="100%"
             >
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 Nincs Bluetooth
               </ListItem>{" "}
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 Nincs WiFi
               </ListItem>{" "}
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 Nincs NFC
               </ListItem>{" "}
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 Nincs USB
               </ListItem>
             </List>
@@ -182,7 +182,7 @@ const productsContent = {
               fontWeight="900"
               w="100%"
               textAlign="center"
-              // color="#0560d5"
+              // color="#e20074"
               p={["20px 0vw", "20px 0vw"]}
               fontSize={["1.5rem", "1.5rem", "3rem", "3rem"]}
               lineHeight={["1.5rem", "1.5rem", "3rem", "3rem"]}
@@ -196,19 +196,19 @@ const productsContent = {
               w="100%"
             >
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 32 különböző blokkláncon, több mint 30000 token támogatása
               </ListItem>{" "}
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 Végtelen számú kriptovaluta tárolás
               </ListItem>
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 Tetszés szerinti token hozzáadás
               </ListItem>{" "}
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 Firmware frissítési lehetőség a legújabb tokenek támogatásához
               </ListItem>
             </List>
@@ -234,7 +234,7 @@ const productsContent = {
             <Heading
               fontWeight="900"
               w="100%"
-              // color="#0560d5"
+              // color="#e20074"
               p={["20px 0vw", "20px 0vw"]}
               fontSize={["1.5rem", "1.5rem", "3rem", "3rem"]}
               lineHeight={["1.5rem", "1.5rem", "3rem", "3rem"]}
@@ -248,15 +248,15 @@ const productsContent = {
               w="100%"
             >
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 Mérete egy bankkártya méretének felel meg
               </ListItem>{" "}
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 Könnyen és egyszerűen mozgatható
               </ListItem>{" "}
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 Kezelje portfólióját bármerre jár
               </ListItem>{" "}
             </List>
@@ -288,7 +288,7 @@ const productsContent = {
           >
             <Heading
               fontWeight="900"
-              // color="#0560d5"
+              // color="#e20074"
               p={["20px 0vw", "20px 0vw"]}
               fontSize={["1.5rem", "1.5rem", "3rem", "3rem"]}
               lineHeight={["1.5rem", "1.5rem", "3rem", "3rem"]}
@@ -303,7 +303,7 @@ const productsContent = {
           <Heading
             fontWeight="900"
             w="100%"
-            // color="#0560d5"
+            // color="#e20074"
             p={["20px 0vw", "20px 0vw"]}
             fontSize={["1.5rem", "1.5rem", "3rem", "3rem"]}
             lineHeight={["1.5rem", "1.5rem", "3rem", "3rem"]}
@@ -403,7 +403,7 @@ const productsContent = {
             <Heading
               textAlign="center"
               fontWeight="900"
-              // color="#0560d5"
+              // color="#e20074"
               p={["20px 50px", "50px 50px"]}
               fontSize={["1.5rem", "1.5rem", "3rem", "3rem"]}
               lineHeight={["1.5rem", "1.5rem", "3rem", "3rem"]}
@@ -417,11 +417,11 @@ const productsContent = {
               w="100%"
             >
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 Prémium AISI 304 rozsdamentes acél
               </ListItem>{" "}
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 Rozsdamentes és saválló
               </ListItem>{" "}
             </List>
@@ -450,7 +450,7 @@ const productsContent = {
             <Heading
               fontWeight="900"
               w="100%"
-              // color="#0560d5"
+              // color="#e20074"
               p={["20px 0vw", "20px 0vw"]}
               fontSize={["1.5rem", "1.5rem", "3rem", "3rem"]}
               lineHeight={["1.5rem", "1.5rem", "3rem", "3rem"]}
@@ -464,12 +464,12 @@ const productsContent = {
               w="100%"
             >
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 Egy általános lakástűz kb. 815°C, a SafePal Cypher olvadáspontja
                 1398°C
               </ListItem>{" "}
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 Szemben az aluminium termékekkel, melyek olvadáspontja 650°C, a
                 SafePal Cypher ellenálló, és visszaállító szavai biztonságban
                 vannak még extrém körülmények között is!
@@ -494,7 +494,7 @@ const productsContent = {
             <Heading
               textAlign="center"
               fontWeight="900"
-              // color="#0560d5"
+              // color="#e20074"
               p={["20px 50px", "50px 50px"]}
               fontSize={["1.5rem", "1.5rem", "3rem", "3rem"]}
               lineHeight={["1.5rem", "1.5rem", "3rem", "3rem"]}
@@ -523,7 +523,7 @@ const productsContent = {
             <Heading
               fontWeight="900"
               w="100%"
-              // color="#0560d5"
+              // color="#e20074"
               p={["20px 0vw", "20px 0vw"]}
               fontSize={["1.5rem", "1.5rem", "3rem", "3rem"]}
               lineHeight={["1.5rem", "1.5rem", "3rem", "3rem"]}
@@ -534,7 +534,7 @@ const productsContent = {
             <Heading
               fontWeight="900"
               w="100%"
-              color="#0560d5"
+              color="#e20074"
               p={["20px 0vw", "20px 0vw"]}
               fontSize={["1.5rem", "1.5rem", "3rem", "3rem"]}
               lineHeight={["1.5rem", "1.5rem", "3rem", "3rem"]}
@@ -549,12 +549,12 @@ const productsContent = {
               w="100%"
             >
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 Kompatibilis bármely BIP39 szabványú szoftver vagy hardver
                 tárcával
               </ListItem>{" "}
               <ListItem>
-                <ListIcon as={MdCheckCircle} color="#0560d5" />
+                <ListIcon as={MdCheckCircle} color="#e20074" />
                 Alkalmas 12, 18, vagy 24 szavas visszaállító kifejezések
                 tárolására
               </ListItem>{" "}
@@ -587,7 +587,7 @@ const productsContent = {
           >
             <Heading
               fontWeight="900"
-              // color="#0560d5"
+              // color="#e20074"
               p={["20px 0vw", "20px 0vw"]}
               fontSize={["1.5rem", "1.5rem", "3rem", "3rem"]}
               lineHeight={["1.5rem", "1.5rem", "3rem", "3rem"]}
@@ -602,7 +602,7 @@ const productsContent = {
           <Heading
             fontWeight="900"
             w="100%"
-            // color="#0560d5"
+            // color="#e20074"
             p={["20px 0vw", "20px 0vw"]}
             fontSize={["1.5rem", "1.5rem", "3rem", "3rem"]}
             lineHeight={["1.5rem", "1.5rem", "3rem", "3rem"]}

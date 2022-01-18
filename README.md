@@ -1,2 +1,1 @@
-# safepalwallet
 # ebPalyazat

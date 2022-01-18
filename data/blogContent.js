@@ -35,7 +35,7 @@ import {
 } from "@chakra-ui/react";
 
 const SLink = styled(Link)`
-  color: #0560d5;
+  color: #e20074;
 `;
 
 const Warning = styled(Heading)`
@@ -59,7 +59,7 @@ const blogContent = {
           textAlign="center"
           width="100%"
           fontWeight="900"
-          // color="#0560d5"
+          // color="#e20074"
           p={["20px 0px", "50px 0px"]}
           fontSize={["1.5rem", "1.5rem", "2.2rem", "2.2rem"]}
           lineHeight={["1.5rem", "1.5rem", "2.2rem", "2.2rem"]}
@@ -173,7 +173,7 @@ const blogContent = {
           textAlign="center"
           width="100%"
           fontWeight="900"
-          // color="#0560d5"
+          // color="#e20074"
           p={["20px 0px", "50px 0px"]}
           fontSize={["1.5rem", "1.5rem", "2.2rem", "2.2rem"]}
           lineHeight={["1.5rem", "1.5rem", "2.2rem", "2.2rem"]}
@@ -273,7 +273,7 @@ const blogContent = {
           textAlign="center"
           width="100%"
           fontWeight="900"
-          // color="#0560d5"
+          // color="#e20074"
           p={["20px 0px", "50px 0px"]}
           fontSize={["1.5rem", "1.5rem", "2.2rem", "2.2rem"]}
           lineHeight={["1.5rem", "1.5rem", "2.2rem", "2.2rem"]}
@@ -294,7 +294,7 @@ const blogContent = {
           textAlign="center"
           width="100%"
           fontWeight="900"
-          // color="#0560d5"
+          // color="#e20074"
           p={["20px 0px", "50px 0px"]}
           fontSize={["1.5rem", "1.5rem", "2.2rem", "2.2rem"]}
           lineHeight={["1.5rem", "1.5rem", "2.2rem", "2.2rem"]}
@@ -332,7 +332,7 @@ const blogContent = {
           textAlign="center"
           width="100%"
           fontWeight="900"
-          // color="#0560d5"
+          // color="#e20074"
           p={["20px 0px", "50px 0px"]}
           fontSize={["1.5rem", "1.5rem", "2.2rem", "2.2rem"]}
           lineHeight={["1.5rem", "1.5rem", "2.2rem", "2.2rem"]}
@@ -400,7 +400,7 @@ export default blogContent;
 // <Heading
 //   textAlign="center"
 //   fontWeight="900"
-//   // color="#0560d5"
+//   // color="#e20074"
 //   p={["20px 50px", "100px 50px"]}
 //   fontSize={["1.5rem", "1.5rem", "3rem", "3rem"]}
 //   lineHeight={["1.5rem", "1.5rem", "3rem", "3rem"]}
