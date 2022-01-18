@@ -1,0 +1,30 @@
+const DuplicatePackageCheckerPlugin = require("duplicate-package-checker-webpack-plugin");
+const path = require("path");
+const BundleAnalyzerPlugin =
+  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+
+//ki lett bak ol va mert next12 nel nem indult mar el a dev server, aztan nem volt idom baszakodni ezzel
+//nem hasznlajuk a custom configot
+
+module.exports = {
+  compress: false,
+  poweredByHeader: false,
+  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+    config.plugins.push(new DuplicatePackageCheckerPlugin());
+    config.resolve.alias["fast-deep-equal"] = path.resolve(
+      __dirname,
+      "node_modules",
+      "fast-deep-equal"
+    );
+    if (false) {
+      config.plugins.push(
+        new BundleAnalyzerPlugin({
+          analyzerMode: "server",
+          analyzerPort: isServer ? 8888 : 8889,
+          openAnalyzer: true,
+        })
+      );
+    }
+    return config;
+  },
+};
