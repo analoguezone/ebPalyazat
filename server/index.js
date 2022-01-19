@@ -71,6 +71,7 @@ nextApp.prepare().then(async () => {
 
     if (response.success) {
       const response = await sendForm(formData);
+      console.log(formData);
       res.send({ message: response });
     } else {
       res.send({ message: "ERROR: BOT!!!" });

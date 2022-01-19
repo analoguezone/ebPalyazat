@@ -492,7 +492,7 @@ export default function Form(props) {
                             backgroundColor="#e20074"
                             color="#232323"
                             colorScheme="magenta"
-                            // disabled={isValidationError() || !mandatory}
+                            disabled={isValidationError() || !mandatory}
                             onClick={submitHandler}
                           >
                             Elküld

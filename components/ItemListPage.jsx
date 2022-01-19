@@ -144,7 +144,7 @@ const ItemListPage = (props) => {
               .filter((x) => x.description)
               .map((project, index) => {
                 return (
-                  <VisibilityControl effect="fade" always={false}>
+                  <VisibilityControl key={index} effect="fade" always={false}>
                     <Stack
                       direction={["column", "row"]}
                       spacing={"40px"}
