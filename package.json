@@ -22,6 +22,7 @@
     "fontfaceobserver": "^2.1.0",
     "framer-motion": "^4.1.17",
     "glob": "^7.1.7",
+    "google-spreadsheet": "^3.2.0",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^12.0.7",
     "next-i18next": "^4.3.0",
@@ -31,6 +32,7 @@
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-crossfade-image": "^1.2.0",
     "react-dom": "^17.0.2",
+    "react-google-recaptcha-v3": "^1.9.7",
     "react-icons": "^4.3.1",
     "styled-components": "^4.4.1",
     "usehooks-ts": "^2.1.1"

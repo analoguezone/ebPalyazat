@@ -128,7 +128,7 @@ const LogoText = styled(MenuItem)`
 `;
 
 function Header(props) {
-  const { t, ecwidLoaded } = props;
+  const { t, isOpen, onOpen, onClose } = props;
   const [timer, settimer] = useState(null);
 
   const router = useRouter();
@@ -317,7 +317,12 @@ function Header(props) {
           );
         }}
       </MenuWrapper>
-      <Button backgroundColor="#e20074" color="white" colorScheme="magenta">
+      <Button
+        backgroundColor="#e20074"
+        color="white"
+        colorScheme="magenta"
+        onClick={onOpen}
+      >
         Jelentkezem
       </Button>
 

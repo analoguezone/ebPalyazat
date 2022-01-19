@@ -12,6 +12,7 @@ import { NextSeo } from "next-seo";
 import Image from "next/image";
 import Link from "next/link";
 
+import Form from "../components/LandingPage/Form";
 import Organizer from "./Organizer";
 
 import {
@@ -79,29 +80,6 @@ function LandingPageContainer(props) {
     );
   }, []);
 
-  function imageStackCreator(subfolder, count) {
-    const stack = [];
-    for (let i = 1; i <= count; i++) {
-      stack.push({
-        original: subfolder + i + "-min.jpg",
-        thumbnail: subfolder + "thumbnail/" + i + ".jpg",
-        height: "20vw",
-      });
-    }
-
-    return stack;
-  }
-
-  useEffect(() => {
-    return () => {
-      if (typeof Ecwid != "undefined") {
-        if (typeof Ecwid.destroy === "function") {
-          Ecwid?.destroy();
-        }
-      }
-    };
-  });
-
   return (
     <div>
       <NextSeo
@@ -121,7 +99,7 @@ function LandingPageContainer(props) {
           site_name: "Electronic Beats",
         }}
       />
-
+      <Form {...props} />
       <Hero
         {...props}
         isMobile={isMobile}

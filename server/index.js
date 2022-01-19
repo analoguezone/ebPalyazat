@@ -7,13 +7,15 @@ const nextI18next = require("./i18n").default;
 
 const bodyParser = require("body-parser");
 const { sendMail } = require("./apiHelpers/emailApiHelper");
+
+const { sendForm } = require("./apiHelpers/googleSheet");
 const dev = process.env.NODE_ENV !== "production";
 const nextApp = next({ dev });
 const handle = nextApp.getRequestHandler();
 
 const { DESTINATION, createSitemap } = require("./sitemap");
 
-const port = process.env.PORT || 3560;
+const port = process.env.PORT || 3570;
 
 nextApp.prepare().then(async () => {
   const app = express();
@@ -49,6 +51,30 @@ nextApp.prepare().then(async () => {
       body: `Nev: ${name}, emal: ${email}, uzenet: ${message}`,
     });
     res.send({ message: response });
+  });
+
+  app.get("*", (req, res) => {
+    return handle(req, res);
+  });
+
+  app.post("/api/sendForm", async (req, res) => {
+    const formData = req.body;
+    const { captchaToken } = formData;
+
+    const captchaResult = await fetch(
+      `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET}&response=${captchaToken}`,
+      {
+        method: "post",
+      }
+    );
+    const response = await captchaResult.json();
+
+    if (response.success) {
+      const response = await sendForm(formData);
+      res.send({ message: response });
+    } else {
+      res.send({ message: "BOT!!!" });
+    }
   });
 
   app.get("*", (req, res) => {

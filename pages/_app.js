@@ -7,6 +7,8 @@ import UiStore from "../context/UiStore.jsx";
 
 import ScrollPositionProvider from "../components/VisibilityControl/ScrollPositionProvider.jsx";
 
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+
 import { appWithTranslation } from "../server/i18n";
 
 class MyApp extends App {
@@ -45,8 +47,21 @@ class MyApp extends App {
       <ChakraProvider>
         <UiStore>
           <ScrollPositionProvider>
-            <DefaultSeo {...SEO} />
-            <Component {...pageProps} />
+            <GoogleReCaptchaProvider
+              reCaptchaKey="6Ld7syIeAAAAADG2wnpzBIgVEXtcQWJDhJl7FXbz"
+              language="hu"
+              // useRecaptchaNet="[optional_boolean_value]"
+              // useEnterprise="[optional_boolean_value]"
+              scriptProps={{
+                async: false, // optional, default to false,
+                defer: false, // optional, default to false
+                appendTo: "head", // optional, default to "head", can be "head" or "body",
+                nonce: undefined, // optional, default undefined
+              }}
+            >
+              <DefaultSeo {...SEO} />
+              <Component {...pageProps} />
+            </GoogleReCaptchaProvider>
           </ScrollPositionProvider>
         </UiStore>
       </ChakraProvider>

@@ -26,7 +26,7 @@ const Content = styled.div`
   z-index: 1;
   /* color: white; */
 `;
-import { Box } from "@chakra-ui/react";
+import { Box, useDisclosure } from "@chakra-ui/react";
 
 const Container = styled.div`
   position: relative;
@@ -217,7 +217,7 @@ function Layout(props) {
   const defaultLanguage = props.i18n?.store?.options.defaultLanguage;
   const langId =
     props.i18n.language == defaultLanguage ? "" : props.i18n.language || "hu";
-
+  const { isOpen, onOpen, onClose } = useDisclosure();
   // useEffect(() => {
   //   const link = document.createElement("link");
   //   link.href =
@@ -332,15 +332,17 @@ function Layout(props) {
 
       <ThemeProvider theme={theme}>
         <Container>
-          <Header langId={langId} />
+          <Header langId={langId} onOpen={onOpen} />
           <section id="top"></section>
           <Content>
-            {/* {React.cloneElement(props.children, {
-              ecwidLoaded,
+            {React.cloneElement(props.children, {
+              onOpen,
+              onClose,
+              isOpen,
               // setproductAction,
               // productAction,
-            })} */}
-            {props.children}
+            })}
+            {/* {props.children} */}
           </Content>
           <section id="contact"></section>
           <FooterContainer logo={null} />
