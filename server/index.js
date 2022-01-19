@@ -73,7 +73,7 @@ nextApp.prepare().then(async () => {
       const response = await sendForm(formData);
       res.send({ message: response });
     } else {
-      res.send({ message: "BOT!!!" });
+      res.send({ message: "ERROR: BOT!!!" });
     }
   });
 
