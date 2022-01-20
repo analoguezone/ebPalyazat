@@ -68,13 +68,14 @@ nextApp.prepare().then(async () => {
       }
     );
     const response = await captchaResult.json();
-
+    console.log("[captcha response]", response);
     if (response.success) {
       const response = await sendForm(formData);
       console.log(formData);
       res.send({ message: response });
     } else {
-      res.send({ message: "ERROR: BOT!!!" });
+      res.send({ message: response });
+      // res.send({ message: "ERROR: BOT!!!" });
     }
   });
 
