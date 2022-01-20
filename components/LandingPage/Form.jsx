@@ -169,7 +169,7 @@ export default function Form(props) {
   const submitHandler = useCallback(
     async function submitHandler() {
       const captchaToken = await handleReCaptchaVerify();
-      console.log("[cp]", captchaToken);
+      // console.log("[cp]", captchaToken);
       if (state.email == "") {
         setError({ ...error, email: true });
         return;
@@ -496,7 +496,7 @@ export default function Form(props) {
                             backgroundColor="#e20074"
                             color="#232323"
                             colorScheme="magenta"
-                            // disabled={isValidationError() || !mandatory}
+                            disabled={isValidationError() || !mandatory}
                             onClick={submitHandler}
                           >
                             Elküld
