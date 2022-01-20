@@ -107,7 +107,12 @@ function Hero(props) {
     <div style={{ zIndex: 1 }}>
       <VisibilityControl>
         <div style={{ width: "100%", height: "100%", position: "relative" }}>
-          <Img layout="responsive" objectFit="contain" src={mainImage} />
+          <Img
+            layout="responsive"
+            objectFit="contain"
+            alt="Electronic Beats | Talents 2022"
+            src={mainImage}
+          />
         </div>
         <section id="learn-more"></section>
       </VisibilityControl>
