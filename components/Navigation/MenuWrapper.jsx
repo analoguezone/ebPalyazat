@@ -30,9 +30,9 @@ function MenuWrapper(props) {
     {
       title: t("Részletek"),
       // link: "/blog",
-      // anchor: "#tartalom",
+      anchor: "#reszletek",
       //TODO oldalon beluli navigacio
-      link: "/b",
+      // link: "/b",
       showAtHeader: true,
       allPages: true,
       // subMenu: [...blogData],
@@ -44,6 +44,15 @@ function MenuWrapper(props) {
       anchor: "#contact",
       //TODO oldalon beluli navigacio
       link: "/",
+      showAtHeader: true,
+      allPages: true,
+    },
+    {
+      title: t("vissza"),
+      link: "https://electronicbeats.hu/",
+      // anchor: "#contact",
+      //TODO oldalon beluli navigacio
+      // link: "/",
       showAtHeader: true,
       allPages: true,
     },

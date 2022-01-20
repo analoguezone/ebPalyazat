@@ -274,6 +274,7 @@ function Footer(props) {
             fontSize="xs"
             textTransform="uppercase"
             colSpan={1}
+            color="#e20074"
             order={[1, 1]}
           >
             {t("Inforációk")}
@@ -284,6 +285,7 @@ function Footer(props) {
             fontSize="xs"
             textTransform="uppercase"
             colSpan={1}
+            color="#e20074"
             order={[2, 2]}
           >
             {t("Tudnivalók")}

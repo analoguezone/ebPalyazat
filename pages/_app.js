@@ -53,8 +53,8 @@ class MyApp extends App {
               // useRecaptchaNet="[optional_boolean_value]"
               // useEnterprise="[optional_boolean_value]"
               scriptProps={{
-                async: false, // optional, default to false,
-                defer: false, // optional, default to false
+                async: true, // optional, default to false,
+                defer: true, // optional, default to false
                 appendTo: "head", // optional, default to "head", can be "head" or "body",
                 nonce: undefined, // optional, default undefined
               }}

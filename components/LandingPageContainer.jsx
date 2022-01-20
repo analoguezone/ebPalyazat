@@ -10,7 +10,7 @@ import styled from "styled-components";
 import { NextSeo } from "next-seo";
 
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 
 import Form from "../components/LandingPage/Form";
 import Organizer from "./Organizer";
@@ -27,6 +27,7 @@ import {
   Button,
   Heading,
   Grid,
+  Link,
   GridItem,
 } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
@@ -62,6 +63,19 @@ const TwoCollumn = styled.div`
   }
   @media (max-width: 900px) {
     column-count: 1;
+  }
+`;
+
+const TLink = styled(Link)`
+  text-decoration: none;
+  cursor: pointer;
+  color: #e20074;
+  font-weight: bold;
+  :hover,
+  :visited,
+  :link,
+  :active {
+    color: #e20074;
   }
 `;
 
@@ -106,6 +120,133 @@ function LandingPageContainer(props) {
         title={t("mainTitle")}
         description={t("mainShortDescription")}
       />
+      <section id="reszletek"></section>
+      <VisibilityControl effect="fade" always={false} lazyload>
+        <ContentBlockContainer
+          backgroundColor="#323232"
+          height=""
+          padding="50px 0"
+        >
+          <VStack>
+            <Heading
+              fontWeight="900"
+              fontFamily="TeleNeoWeb"
+              color="white"
+              fontSize={["2rem", "3rem", "4rem", "4rem"]}
+              lineHeight={["2rem", "3rem", "4rem", "4rem"]}
+              w={["100vw", "90vw"]}
+              p={["40px 4vw", "60px 4vw"]}
+            >
+              <span style={{ color: "#e20074" }}>Mutasd a dalaid:</span> a
+              Telekom Electronic Beats keresi a legjobb 2022-es zenéket, amikből
+              újabb válogatáslemez készül
+            </Heading>
+            <Heading
+              fontWeight="500"
+              fontFamily="TeleNeoWeb"
+              color="white"
+              fontSize={["1.5rem", "2rem", "2rem", "2rem"]}
+              lineHeight={["1.5rem", "2rem", "2rem", "2rem"]}
+              w={["100vw", "90vw"]}
+              p={["10px 4vw", "10px 4vw"]}
+              pb={["20px", "40px"]}
+            >
+              Január 17-től pop, klub és kísérletizene kategóriában várják a
+              jelentkezéseket.
+            </Heading>
+            <Text
+              // fontWeight="900"
+              fontFamily="TeleNeoWeb"
+              color="white"
+              fontSize={["md", "lg", "xl", "2xl"]}
+              // lineHeight={["1rem", "1rem", "300px", "2rem"]}
+              w={["100vw", "90vw"]}
+              p={["10px 4vw", "10px 4vw"]}
+            >
+              Lassan, de biztosan kijövünk a mögöttünk álló két furcsa év
+              alagútjából, aminek a végén most már ott pislákol a fény, és a{" "}
+              <TLink href={"https://electronicbeats.hu"}>
+                Telekom Electronic Beats
+              </TLink>{" "}
+              csapata is újra aktivizálja magát, ami a hazai zenei tehetségek
+              felkultatását illeti: szeretnék ismét láthatóvá tenni, milyen
+              figyelemreméltó dolgok történnek a hazai kisstúdiókban és
+              hálószobákban - és később sem elengedni az előadók kezét, hanem
+              segíteni nekik a karrierjük egyengetésében.
+            </Text>
+
+            <Text
+              // fontWeight="900"
+              fontFamily="TeleNeoWeb"
+              color="white"
+              fontSize={["md", "lg", "xl", "2xl"]}
+              // lineHeight={["1rem", "1rem", "300px", "2rem"]}
+              w={["100vw", "90vw"]}
+              p={["10px 4vw", "10px 4vw"]}
+            >
+              Azért ismét, mert ez már a második felvonás lesz: tavalyelőtt egy
+              kiadótulajdonosból, dj-ből és zenei újságíróból álló szakmai zsűri
+              részvételével{" "}
+              <TLink href={"https://www.electronicbeats.hu/sslteb001/"}>
+                több mint hatszáz jelentkezőből válogatták ki 30+1 zenészt, akik
+                felkerültek tripla válogatásukra,
+              </TLink>{" "}
+              és most is ugyanebben a formátumban gondolkodnak - az elbírálásban
+              ezúttal részt vesz majd az ország egyik legnagyobbat brillírozó
+              rappere, BetonHofi, az elsöprő dalairól ismert Carson Coma, a
+              budapesti-londoni tengelyen mozgó énekesnő, Solére, illetve a
+              gépzenei közeg definitív alakjai: Tolo, LAU, Iamyank, és
+              Kolbenheyer Erik az EXILES kiadótól.
+            </Text>
+            <Text
+              // fontWeight="900"
+              fontFamily="TeleNeoWeb"
+              color="white"
+              fontSize={["md", "lg", "xl", "2xl"]}
+              // lineHeight={["1rem", "1rem", "300px", "2rem"]}
+              w={["100vw", "90vw"]}
+              p={["10px 4vw", "10px 4vw"]}
+            >
+              A Telekom Electronic Beats projektje január 17. hétfőtől majdnem
+              egy hónapon át, február 13-ig várja olyan zenei alkotók
+              jelentkezését, akik szeretnék dalaikat a világ elé tárni, igazolva
+              azt, hogy a hazai zenéknek is bőven van keresnivalójuk a
+              nemzetközi mezőnyben - az elkészült válogatás ugyanis valamennyi
+              jelentős streaming platformon elérhetővé válik majd tavasszal.
+            </Text>
+            <Text
+              // fontWeight="900"
+              fontFamily="TeleNeoWeb"
+              color="white"
+              fontSize={["md", "lg", "xl", "2xl"]}
+              // lineHeight={["1rem", "1rem", "300px", "2rem"]}
+              w={["100vw", "90vw"]}
+              p={["10px 4vw", "10px 4vw"]}
+            >
+              A válogatásra felkerülő fiatal tehetségek ráadásul olyan
+              jutalmakkal is gyarapodhatnak, mint egy VOLT Fesztiválos koncert,
+              a további alkotást segítő Macbook Pro, ELLE különdíj egy
+              feltörekvő női előadónak vagy fellépés a Kolorádón.
+            </Text>
+
+            <Text
+              // fontWeight="900"
+              fontFamily="TeleNeoWeb"
+              color="white"
+              fontSize={["md", "lg", "xl", "2xl"]}
+              // lineHeight={["1rem", "1rem", "300px", "2rem"]}
+              w={["100vw", "90vw"]}
+              p={["10px 4vw", "10px 4vw"]}
+            >
+              Lehet előkapni a félkész zenéket, leporolni a sávokat,
+              kölcsönkérni a Junót, elvonulni napokra a mikrofonállvány
+              árnyékába - a Telekom Electronic Beats digitális kiadója napokon
+              belül tárt karokkal várja az érdekesebbnél érdekesebb trekiket,
+              legyen az 2022 bunkertechnója vagy nyári slágere.
+            </Text>
+          </VStack>
+        </ContentBlockContainer>
+      </VisibilityControl>
       {/* <section id="termekek"></section>
       <VStack>
         <Heading
@@ -118,6 +259,7 @@ function LandingPageContainer(props) {
           {t("Termékek")}
         </Heading>
       </VStack>
+
 
       <section id="23"></section> */}
     </div>
