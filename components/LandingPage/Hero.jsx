@@ -20,7 +20,7 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { default as Img } from "next/image";
-import mainImage from "../../public/images/wallet10s.jpg";
+import mainImage from "../../public/images/eb/electronicbeats-12.jpg";
 //import background from "images/background.png";
 
 const ImageBackground = styled.img`
@@ -106,94 +106,9 @@ function Hero(props) {
   return (
     <div style={{ zIndex: 1 }}>
       <VisibilityControl>
-        <Stack direction={["column", "row"]}>
-          <VStack
-            h={["calc(60vh )", "calc(100vh - 80px)"]}
-            position="relative"
-            order={[2, 1]}
-            w={["100vw", "50vw"]}
-          >
-            <ContentBlock style={{ top: "20px" }}>
-              <div>
-                <Image
-                  src="images/eb/telekom-electronic-beats-logo.svg"
-                  p={["10px 4vw", "10px 4vw", "10px 4vw", "20px 4vw"]}
-                  color="red"
-                />
-                <Heading
-                  fontWeight="900"
-                  color="#e20074"
-                  fontSize={["2rem", "3rem", "4rem", "4rem"]}
-                  lineHeight={["2rem", "3rem", "4rem", "4rem"]}
-                  w={["90vw", "50vw"]}
-                  p={["10px 4vw", "20px 4vw"]}
-                >
-                  Electronic Beats válogatás 2022
-                </Heading>
-
-                <Text
-                  w={["90vw", "50vw"]}
-                  letterSpacing="2px"
-                  p={["0px 4vw"]}
-                  fontSize={["sm", "sm", "md", "md"]}
-                >
-                  POPPING | CLUBBING | XPERIMENTING
-                </Text>
-                <Box p={["10px 4vw", "20px 4vw"]}>
-                  <Button
-                    rightIcon={<ArrowForwardIcon />}
-                    fontWeight="bold"
-                    // colorScheme="teal"
-
-                    variant="outline"
-                  >
-                    Tudjon meg többet
-                  </Button>
-                </Box>
-              </div>
-            </ContentBlock>
-          </VStack>
-
-          <VStack
-            h={["calc(50vh - 40px)", "calc(100vh - 80px)"]}
-            position="relative"
-            overflow="hidden"
-            w={["100vw", "50vw"]}
-            order={[1, 2]}
-          >
-            {/* <Image
-                objectFit="cover"
-                h={["calc(50vh - 40px)", "calc(100vh - 80px)"]}
-                w={["100vw", "50vw"]}
-                alt="SafePal Wallet"
-                src="/images/28-min.jpg"
-              /> */}
-
-            <ContentBlock>
-              <div>
-                <Heading
-                  w={["90vw", "50vw"]}
-                  color="white"
-                  fontWeight="900"
-                  fontSize={["2rem", "3rem", "4rem", "4rem"]}
-                  lineHeight={["2rem", "3rem", "4rem", "4rem"]}
-                  textShadow="0px 0px 5px rgba(0, 0, 0, 0.6)"
-                  p={["20px 4vw"]}
-                ></Heading>
-
-                <Text
-                  w={["90vw", "50vw"]}
-                  fontSize={["sm", "sm", "md", "md"]}
-                  color="white"
-                  letterSpacing="2px"
-                  textShadow="0px 0px 5px rgba(0, 0, 0, 0.6)"
-                  p={["0px 4vw"]}
-                ></Text>
-              </div>
-            </ContentBlock>
-          </VStack>
-        </Stack>
-
+        <div style={{ width: "100%", height: "100%", position: "relative" }}>
+          <Img layout="responsive" objectFit="contain" src={mainImage} />
+        </div>
         <section id="learn-more"></section>
       </VisibilityControl>
     </div>
@@ -202,21 +117,90 @@ function Hero(props) {
 
 export default Hero;
 
-{
-  /* <Container
-style={{
-  backgroundImage: "url('" + props.backgroundImage + "')",
-  height: "calc(100vh - 80px)",
-}}
->
-<Content>
-  <ContentBlock>
-    <div>
-      {props.title && <Title className=" ">{props.title}</Title>}
+//  <Stack direction={["column", "row"]}>
+//    <VStack
+//      h={["calc(60vh )", "calc(100vh - 80px)"]}
+//      position="relative"
+//      order={[2, 1]}
+//      w={["100vw", "50vw"]}
+//    >
+//      <ContentBlock style={{ top: "20px" }}>
+//        <div>
+//          <Image
+//            src="images/eb/telekom-electronic-beats-logo.svg"
+//            p={["10px 4vw", "10px 4vw", "10px 4vw", "20px 4vw"]}
+//            color="red"
+//          />
+//          <Heading
+//            fontWeight="900"
+//            color="#e20074"
+//            fontSize={["2rem", "3rem", "4rem", "4rem"]}
+//            lineHeight={["2rem", "3rem", "4rem", "4rem"]}
+//            w={["90vw", "50vw"]}
+//            p={["10px 4vw", "20px 4vw"]}
+//          >
+//            Electronic Beats válogatás 2022
+//          </Heading>
 
-      <SubTitle className=" ">{props.description}</SubTitle>
-    </div>
-  </ContentBlock>
-</Content>
-</Container> */
-}
+//          <Text
+//            w={["90vw", "50vw"]}
+//            letterSpacing="2px"
+//            p={["0px 4vw"]}
+//            fontSize={["sm", "sm", "md", "md"]}
+//          >
+//            POPPING | CLUBBING | XPERIMENTING
+//          </Text>
+//          <Box p={["10px 4vw", "20px 4vw"]}>
+//            <Button
+//              rightIcon={<ArrowForwardIcon />}
+//              fontWeight="bold"
+//              // colorScheme="teal"
+
+//              variant="outline"
+//            >
+//              Tudjon meg többet
+//            </Button>
+//          </Box>
+//        </div>
+//      </ContentBlock>
+//    </VStack>
+
+//    <VStack
+//      h={["calc(50vh - 40px)", "calc(100vh - 80px)"]}
+//      position="relative"
+//      overflow="hidden"
+//      w={["100vw", "50vw"]}
+//      order={[1, 2]}
+//    >
+//      {/* <Image
+//                 objectFit="cover"
+//                 h={["calc(50vh - 40px)", "calc(100vh - 80px)"]}
+//                 w={["100vw", "50vw"]}
+//                 alt="SafePal Wallet"
+//                 src="/images/28-min.jpg"
+//               /> */}
+
+//      <ContentBlock>
+//        <div>
+//          <Heading
+//            w={["90vw", "50vw"]}
+//            color="white"
+//            fontWeight="900"
+//            fontSize={["2rem", "3rem", "4rem", "4rem"]}
+//            lineHeight={["2rem", "3rem", "4rem", "4rem"]}
+//            textShadow="0px 0px 5px rgba(0, 0, 0, 0.6)"
+//            p={["20px 4vw"]}
+//          ></Heading>
+
+//          <Text
+//            w={["90vw", "50vw"]}
+//            fontSize={["sm", "sm", "md", "md"]}
+//            color="white"
+//            letterSpacing="2px"
+//            textShadow="0px 0px 5px rgba(0, 0, 0, 0.6)"
+//            p={["0px 4vw"]}
+//          ></Text>
+//        </div>
+//      </ContentBlock>
+//    </VStack>
+//  </Stack>;

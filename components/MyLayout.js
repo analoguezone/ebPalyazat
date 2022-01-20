@@ -23,7 +23,7 @@ const layoutStyle = { overflowX: "hidden" };
 
 const Content = styled.div`
   position: relative;
-  z-index: 1;
+  z-index: 2;
   /* color: white; */
 `;
 import { Box, useDisclosure } from "@chakra-ui/react";
@@ -286,7 +286,7 @@ function Layout(props) {
           margin: 0;
           background-color: white;
           // color: white;
-          font-family: "Raleway";
+          font-family: "TeleNeoWeb";
         }
 
         .noscroll {
@@ -298,32 +298,32 @@ function Layout(props) {
         }
 
         @font-face {
-          font-family: "Raleway";
-          src: url("/fonts/Raleway-Bold.woff2") format("woff2");
+          font-family: "TeleNeoWeb";
+          src: url("/fonts/TeleNeoWeb-Bold.woff2") format("woff2");
           font-weight: bold;
           font-style: normal;
           font-display: swap;
         }
 
         @font-face {
-          font-family: "Raleway";
-          src: url("/fonts/Raleway-Regular.woff2") format("woff2");
+          font-family: "TeleNeoWeb";
+          src: url("/fonts/TeleNeoWeb-Regular.woff2") format("woff2");
           font-weight: normal;
           font-style: normal;
           font-display: swap;
         }
 
         @font-face {
-          font-family: "Raleway";
-          src: url("/fonts/Raleway-Medium.woff2") format("woff2");
+          font-family: "TeleNeoWeb";
+          src: url("/fonts/TeleNeoWeb-Medium.woff2") format("woff2");
           font-weight: 500;
           font-style: normal;
           font-display: swap;
         }
 
         @font-face {
-          font-family: "Raleway";
-          src: url("/fonts/Raleway-Light.woff2") format("woff2");
+          font-family: "TeleNeoWeb";
+          src: url("/fonts/TeleNeoWeb-Thin.woff2") format("woff2");
           font-weight: 300;
           font-style: normal;
           font-display: swap;
@@ -345,6 +345,7 @@ function Layout(props) {
             {/* {props.children} */}
           </Content>
           <section id="contact"></section>
+
           <FooterContainer logo={null} />
         </Container>
       </ThemeProvider>

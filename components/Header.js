@@ -23,12 +23,13 @@ import {
   VStack,
   StackDivider,
   Button,
+  Text,
 } from "@chakra-ui/react";
 
 const MenuItem = styled.div`
   display: flex;
   user-select: none;
-  color: black;
+  color: white;
   font-weight: 500;
   font-size: 1.25rem;
   /* margin-right: 15px; */
@@ -54,11 +55,11 @@ const MenuItem = styled.div`
     margin-right: 0px;
   }
   a {
-    color: black;
+    color: white;
 
     text-decoration: none;
     :visited {
-      color: black;
+      color: white;
     }
   }
 `;
@@ -72,7 +73,7 @@ const HeaderContainer = styled.div`
   max-width:65vw;
   justify-content: flex-end;
   z-index: 20;
-border-bottom: 1px solid;
+border-bottom: 1px solid grey;
    @media only screen and (max-device-width: 700px) {
       /* width: 30vw; */
       border-bottom:none;
@@ -318,6 +319,9 @@ function Header(props) {
         }}
       </MenuWrapper>
       <Button
+        fontFamily="TeleNeoWeb"
+        size={["sm", "md"]}
+        px="2"
         backgroundColor="#e20074"
         color="white"
         colorScheme="magenta"

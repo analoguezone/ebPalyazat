@@ -1,7 +1,7 @@
 import React from "react";
 
-import blogData from "../../data/blogData";
-import productData from "../../data/productData";
+// import blogData from "../../data/blogData";
+// import productData from "../../data/productData";
 import { withTranslation } from "../../server/i18n";
 
 function MenuWrapper(props) {
@@ -25,7 +25,7 @@ function MenuWrapper(props) {
 
       showAtHeader: true,
       allPages: true,
-      subMenu: [...productData],
+      // subMenu: [...productData],
     },
     {
       title: t("Részletek"),
@@ -35,7 +35,7 @@ function MenuWrapper(props) {
       link: "/b",
       showAtHeader: true,
       allPages: true,
-      subMenu: [...blogData],
+      // subMenu: [...blogData],
     },
 
     {

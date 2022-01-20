@@ -44,7 +44,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang={language} dir={languageDirection}>
         <Head />
-        <body>
+        <body style={{ backgroundColor: "#323232" }}>
           <Main />
           <NextScript />
         </body>

@@ -17,7 +17,7 @@ cursor: pointer;
   i {
     background-color: ${(props) =>
       !props.heroPassed || props.initHeader ? "black" : "black"};
-      background-color:black;
+      background-color:white;
     border-radius: 2px;
     content: '';
     display: block;

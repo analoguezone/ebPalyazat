@@ -199,11 +199,12 @@ export default function Form(props) {
     <Modal onClose={onClose} size={"full"} isOpen={isOpen}>
       <ModalOverlay />
       <ModalContent>
-        <ModalCloseButton />
+        <ModalCloseButton color="white" />
         <ModalBody backgroundColor="#232323">
           <Center>
             <Container>
               <Heading
+                fontFamily="TeleNeoWeb"
                 fontWeight="900"
                 color="#e20074"
                 p={["20px 0vw", "80px 0vw"]}
@@ -224,6 +225,7 @@ export default function Form(props) {
                           Köszönjük a jelentkezést!
                         </h3>
                         <Button
+                          fontFamily="TeleNeoWeb"
                           mt="3rem"
                           onClick={() => {
                             setSuccess(false);
@@ -471,7 +473,7 @@ export default function Form(props) {
                           colorScheme="red"
                           color="white"
                         >
-                          A palyazati feltételeket elfogadom
+                          A pályázati feltételeket elfogadom
                         </Checkbox>
                       </GridItem>
                       <GridItem
@@ -492,7 +494,7 @@ export default function Form(props) {
                             backgroundColor="#e20074"
                             color="#232323"
                             colorScheme="magenta"
-                            disabled={isValidationError() || !mandatory}
+                            // disabled={isValidationError() || !mandatory}
                             onClick={submitHandler}
                           >
                             Elküld

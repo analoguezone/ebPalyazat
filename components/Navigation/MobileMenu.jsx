@@ -5,11 +5,11 @@ import Link from "next/link";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Container = styled.div`
-  background-color: white;
+  background-color: #232323;
   position: fixed;
   display: flex;
   flex-direction: column;
-
+  font-family: "TeleNeoWeb";
   top: 0;
   right: 0;
   /* left: 0; */
@@ -32,6 +32,7 @@ const Container = styled.div`
 const MenuItem = styled.div`
   font-weight: 200;
   padding: 5px 10px;
+  color: white;
   margin: 0 auto;
   text-align: left;
   line-height: 170%;
@@ -42,7 +43,7 @@ const MenuItem = styled.div`
   a:link,
   a:active {
     text-decoration: none;
-    color: black;
+    color: white;
   }
 `;
 
@@ -56,6 +57,7 @@ const SubMenuItem = styled.div`
 
 const ContentWrapper = styled.div`
   padding: 20px 0 150px 0;
+  font-family: "TeleNeoWeb";
 `;
 
 function MobileMenu(props) {

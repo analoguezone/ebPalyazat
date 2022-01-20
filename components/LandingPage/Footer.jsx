@@ -35,6 +35,8 @@ const WatchContainer = styled.div`
 `;
 
 const FootContainer = styled.div`
+  font-family: "TeleNeoWeb";
+  z-index: 1;
   background-color: ${(props) => props.theme.backgroundColor};
   position: fixed;
   color: white;
@@ -274,7 +276,7 @@ function Footer(props) {
             colSpan={1}
             order={[1, 1]}
           >
-            {t("Céginformáció")}
+            {t("Inforációk")}
           </GridItem>
           <GridItem
             fontWeight="bold"
@@ -305,9 +307,9 @@ function Footer(props) {
             order={[4, 3]}
           >
             {t("")}
-            SafePalWallet.hu
+            Electronicbeats.hu
             <Box letterSpacing="1px" fontSize="80%" p="15px 0">
-              A SafePal termékek magyarországi képviselete
+              tetszőleges szöveg
             </Box>
             <Box letterSpacing="1px" fontSize="80%" p="15px 0">
               <HStack>
@@ -319,7 +321,7 @@ function Footer(props) {
                 />
                 <Box>
                   <a href="mailto:info@safepalwallet.hu">
-                    info(@)safepalwallet(.)hu
+                    info(@)electronicbeats(.)hu
                   </a>
                 </Box>
               </HStack>
@@ -338,7 +340,7 @@ function Footer(props) {
             <Box letterSpacing="1px" fontSize="80%" p="15px 0">
               <br className="noMobile" />
               <br className="noMobile" />
-              Copyright 2022 One Properties Kft.
+              Copyright 2022 Electronic Beats.
             </Box>
           </GridItem>
           <GridItem letterSpacing="" fontSize="xs" colSpan={1} order={[5, 4]}>
@@ -354,7 +356,7 @@ function Footer(props) {
             </Box>
           </GridItem>
           <GridItem colSpan={2} order={[6, 6]}>
-            <Contact {...props} />
+            {/* <Contact {...props} /> */}
           </GridItem>
         </Grid>
 
