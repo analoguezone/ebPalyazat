@@ -2,16 +2,16 @@ const path = require("path");
 const glob = require("glob");
 const fs = require("fs");
 
-const productData = require("../data/productData"); //ezek a szervizek routjai
-const blogData = require("../data/blogData"); //ezek a szervizek routjai
+// const productData = require("../data/productData"); //ezek a szervizek routjai
+// const blogData = require("../data/blogData"); //ezek a szervizek routjai
 
-const allDynamicPages = [...productData, ...blogData];
+// const allDynamicPages = [...productData, ...blogData];
 
 // const allDynamicPages = [];
 
-const dynamicRoutes = allDynamicPages.map((service) => {
-  return { link: service.link, route: service.linkRoute };
-}); //ezekbol a nevekbol csinal linket a sitemapbe
+// const dynamicRoutes = allDynamicPages.map((service) => {
+//   return { link: service.link, route: service.linkRoute };
+// }); //ezekbol a nevekbol csinal linket a sitemapbe
 
 // If you use Dotenv you can include your .env variables uncommenting the following line
 // require("dotenv").config();
@@ -23,7 +23,7 @@ const resolveApp = (relativePath) => path.resolve(appDirectory, relativePath);
 
 // SITE_ROOT is the domain of your app
 // Update example.com with your domain or set the env variable
-const SITE_ROOT = process.env.SITE_ROOT || "https://safepalwallet.hu";
+const SITE_ROOT = process.env.SITE_ROOT || "https://talents.electronicbeats.hu";
 
 // SOURCE is where are stored all pages files
 // By default it tracks all files in the pages folder
@@ -33,7 +33,7 @@ const SOURCE =
 
 // API_SOURCE is the endpoint of you api
 // Update example.com/api with your endpoint or set the env variable
-const API_SOURCE = process.env.API_SOURCE || "https://safepalwallet.hu/api";
+// const API_SOURCE = process.env.API_SOURCE || "https://safepalwallet.hu/api";
 
 // DESTINATION is where the real file is exported
 // By default is .next/static/sitemap.xml
@@ -82,22 +82,22 @@ const createSitemap = () => {
    * TODO: Add <lastmod>${lastMod}</lastmod> tag and set priority order
    **/
 
-  dynamicRoutes.forEach((route, index) => {
-    let modDate = new Date();
-    let lastMod = `${modDate.getFullYear()}-${(
-      "0" +
-      (modDate.getMonth() + 1)
-    ).slice(-2)}-${("0" + modDate.getDate()).slice(-2)}`;
+  // dynamicRoutes.forEach((route, index) => {
+  //   let modDate = new Date();
+  //   let lastMod = `${modDate.getFullYear()}-${(
+  //     "0" +
+  //     (modDate.getMonth() + 1)
+  //   ).slice(-2)}-${("0" + modDate.getDate()).slice(-2)}`;
 
-    xml += "<url><loc>";
-    xml += `${SITE_ROOT}/${route.route}/${route.link}`;
-    xml += "</loc>";
-    xml += `<lastmod>${lastMod}</lastmod>`;
-    xml += "<changefreq>always</changefreq><priority>0.5</priority></url>";
-    if (route === dynamicRoutes[dynamicRoutes.length - 1]) {
-      xml += "</urlset>";
-    }
-  });
+  //   xml += "<url><loc>";
+  //   xml += `${SITE_ROOT}/${route.route}/${route.link}`;
+  //   xml += "</loc>";
+  //   xml += `<lastmod>${lastMod}</lastmod>`;
+  //   xml += "<changefreq>always</changefreq><priority>0.5</priority></url>";
+  //   if (route === dynamicRoutes[dynamicRoutes.length - 1]) {
+  //     xml += "</urlset>";
+  //   }
+  // });
 
   const hasClosingTag = xml.includes("</urlset>");
   if (!hasClosingTag) xml += "</urlset>";
