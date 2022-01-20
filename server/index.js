@@ -68,6 +68,9 @@ nextApp.prepare().then(async () => {
       }
     );
     const response = await captchaResult.json();
+
+    console.log("[RECAPTCHA_SECRET]", process.env.RECAPTCHA_SECRET);
+    console.log("[captcha token]", captchaToken);
     console.log("[captcha response]", response);
     if (response.success) {
       const response = await sendForm(formData);
