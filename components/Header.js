@@ -96,6 +96,7 @@ const Wrapper = styled.div`
   transition: all 0.3s ease-in-out;
   /* height: 50px; */
   margin-top: 5px;
+  margin-bottom: 5px;
   width: 100%;
   padding: 5px 45px 25px 45px;
   flex-direction: row;

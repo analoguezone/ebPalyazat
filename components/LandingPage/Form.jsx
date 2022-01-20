@@ -248,14 +248,14 @@ export default function Form(props) {
                     <Grid
                       maxW="1200px"
                       p="0"
-                      templateColumns="repeat(5, 1fr)"
+                      templateColumns={["repeat(5, 1fr)", "repeat(5, 1fr)"]}
                       gap={5}
                     >
                       <GridItem
                         fontWeight="bold"
                         letterSpacing="2px"
                         fontSize="xs"
-                        colSpan={2}
+                        colSpan={["5", "2"]}
                       >
                         <input
                           type="text"
@@ -268,7 +268,7 @@ export default function Form(props) {
                         fontWeight="bold"
                         letterSpacing="2px"
                         fontSize="xs"
-                        colSpan={2}
+                        colSpan={["5", "2"]}
                       >
                         {error.email && (
                           <div className="error">
@@ -287,7 +287,7 @@ export default function Form(props) {
                         fontWeight="bold"
                         letterSpacing="2px"
                         fontSize="xs"
-                        colSpan={1}
+                        colSpan={["5", "1"]}
                       >
                         <Select
                           name="alkotas_stilusa"
@@ -305,7 +305,7 @@ export default function Form(props) {
                         fontWeight="bold"
                         letterSpacing="2px"
                         fontSize="xs"
-                        colSpan={3}
+                        colSpan={["5", "3"]}
                       >
                         <input
                           type="text"
@@ -318,7 +318,7 @@ export default function Form(props) {
                         fontWeight="bold"
                         letterSpacing="2px"
                         fontSize="xs"
-                        colSpan={1}
+                        colSpan={["5", "1"]}
                       >
                         <input
                           type="text"
@@ -331,7 +331,7 @@ export default function Form(props) {
                         fontWeight="bold"
                         letterSpacing="2px"
                         fontSize="xs"
-                        colSpan={1}
+                        colSpan={["5", "1"]}
                       >
                         <input
                           type="text"
@@ -344,7 +344,7 @@ export default function Form(props) {
                         fontWeight="bold"
                         letterSpacing="2px"
                         fontSize="xs"
-                        colSpan={3}
+                        colSpan={["5", "3"]}
                       >
                         <input
                           type="text"
@@ -359,7 +359,7 @@ export default function Form(props) {
                         fontWeight="bold"
                         letterSpacing="2px"
                         fontSize="xs"
-                        colSpan={2}
+                        colSpan={["5", "2"]}
                       >
                         <input
                           onBlur={(e) => {
@@ -408,7 +408,7 @@ export default function Form(props) {
                         fontWeight="bold"
                         letterSpacing="2px"
                         fontSize="xs"
-                        colSpan={2}
+                        colSpan={["5", "2"]}
                       >
                         <input
                           onBlur={(e) => {
@@ -425,7 +425,7 @@ export default function Form(props) {
                         fontWeight="bold"
                         letterSpacing="2px"
                         fontSize="xs"
-                        colSpan={1}
+                        colSpan={["5", "1"]}
                       >
                         <input
                           type="text"
@@ -438,7 +438,7 @@ export default function Form(props) {
                         fontWeight="bold"
                         letterSpacing="2px"
                         fontSize="xs"
-                        colSpan={2}
+                        colSpan={["5", "2"]}
                       >
                         <input
                           type="text"
@@ -490,11 +490,11 @@ export default function Form(props) {
                       >
                         <ModalFooter>
                           <Button
-                            mr="1vw"
+                            mr={["10vw", "1vw"]}
                             backgroundColor="#e20074"
                             color="#232323"
                             colorScheme="magenta"
-                            // disabled={isValidationError() || !mandatory}
+                            disabled={isValidationError() || !mandatory}
                             onClick={submitHandler}
                           >
                             Elküld
