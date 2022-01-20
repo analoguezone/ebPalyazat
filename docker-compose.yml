@@ -5,6 +5,10 @@ services:
     restart: always
     environment:
       - EMAIL_PASSWORD=${EMAIL_PASSWORD}
+      - CLIENT_EMAIL=${CLIENT_EMAIL}
+      - GOOGLE_PRIVATE_KEY=${GOOGLE_PRIVATE_KEY}
+      - RECAPTCHA_SITE_KEY=${RECAPTCHA_SITE_KEY}
+      - RECAPTCHA_SECRET=${RECAPTCHA_SECRET}
       - PORT=4170
     volumes:
       - docroot:/usr/src/app
