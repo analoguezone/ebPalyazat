@@ -1,6 +1,6 @@
 const { GoogleSpreadsheet } = require("google-spreadsheet");
 require("dotenv").config({ path: ".env" });
-const creds = require("./config/my-speech-1586206444417-d0123c6f5f3d.json"); // the file saved above
+// const creds = require("./config/my-speech-1586206444417-d0123c6f5f3d.json"); // the file saved above
 const doc = new GoogleSpreadsheet(
   "1R7C-MRKnEL4CI9RAUowyDeOteMWr8Fd7FqVtJZygUzE"
 );

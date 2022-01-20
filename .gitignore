@@ -1,4 +1,5 @@
 node_modules
 .next
 .env
-./server/apiHelpers/config/my-speech-1586206444417-d0123c6f5f3d.json
+my-speech-1586206444417-d0123c6f5f3d.json
+my-speech-1586206444417-302bc0565236.json
