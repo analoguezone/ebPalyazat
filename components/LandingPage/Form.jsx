@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
-
+import { useRouter } from "next/router";
 import {
   Box,
   Stack,
@@ -28,6 +28,7 @@ import styled from "styled-components";
 import VisibilityControl from "../VisibilityControl/VisibilityControl.jsx";
 import fetch from "isomorphic-unfetch";
 const Container = styled.div`
+  background-color: #232323;
   form {
     width: 100%;
   }
@@ -76,6 +77,7 @@ const Container = styled.div`
 
 export default function Form(props) {
   const { isOpen, onOpen, onClose } = props;
+  const router = useRouter();
   const recaptchaRef = useRef(null);
   const [token, setToken] = useState();
   const [state, setstate] = useState({
@@ -93,6 +95,8 @@ export default function Form(props) {
     lakcim: "",
     email: "",
     soundcloud_link: "",
+    honnan_hallottal: "",
+    honnan_hallottal_reszletek: " ",
     feltetelek: false,
   });
   const [success, setSuccess] = useState(false);
@@ -188,7 +192,8 @@ export default function Form(props) {
       const res = await fetch("/api/sendForm", config);
       const data = await res.json();
       if (data.message == "success") {
-        setSuccess(true);
+        // setsending(false);
+        router.push("/sikeres-jelentkezes");
       }
       setsending(false);
     },
@@ -196,7 +201,7 @@ export default function Form(props) {
   );
 
   return (
-    <Modal onClose={onClose} size={"full"} isOpen={isOpen}>
+    <Modal onClose={() => router.push("/")} size={"full"} isOpen={true}>
       <ModalOverlay />
       <ModalContent>
         <ModalCloseButton color="white" />
@@ -466,6 +471,46 @@ export default function Form(props) {
                         fontWeight="bold"
                         letterSpacing="2px"
                         fontSize="xs"
+                        colSpan={["5", "2"]}
+                      >
+                        <Select
+                          name="honnan_hallottal"
+                          id="honnan_hallottal"
+                          required
+                          onChange={handleUserInput}
+                          placeholder={"Honnan hallottál a pályázatról?*"}
+                        >
+                          <option value="eb.hu">eb.hu</option>
+                          <option value="eb fb">eb fb</option>
+                          <option value="eb insta">eb insta</option>
+                          <option value="telekom fb">telekom fb</option>
+                          <option value="insta">insta</option>
+                          <option value="haveroktól">haveroktól</option>
+                          <option value="fb hirdetés">fb hirdetés</option>
+                          <option value="hírportálon">hírportálon</option>
+                          <option value="egyéb">egyéb</option>
+                        </Select>
+                      </GridItem>
+                      {state.honnan_hallottal == "egyéb" ||
+                      state.honnan_hallottal == "hírportálon" ? (
+                        <GridItem
+                          fontWeight="bold"
+                          letterSpacing="2px"
+                          fontSize="xs"
+                          colSpan={["5", "3"]}
+                        >
+                          <input
+                            type="text"
+                            onBlur={handleUserInput}
+                            name="honnan_hallottal_reszletek"
+                            placeholder={"Kérjük részletezd*"}
+                          />
+                        </GridItem>
+                      ) : null}
+                      <GridItem
+                        fontWeight="bold"
+                        letterSpacing="2px"
+                        fontSize="xs"
                         colSpan={5}
                       >
                         <Checkbox
@@ -501,7 +546,9 @@ export default function Form(props) {
                           >
                             Elküld
                           </Button>
-                          <Button onClick={onClose}>Mégsem</Button>
+                          <Button onClick={() => router.push("/")}>
+                            Mégsem
+                          </Button>
                         </ModalFooter>
                       </GridItem>
                     </Grid>

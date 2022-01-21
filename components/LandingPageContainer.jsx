@@ -10,8 +10,7 @@ import styled from "styled-components";
 import { NextSeo } from "next-seo";
 
 import Image from "next/image";
-// import Link from "next/link";
-
+import { useRouter } from "next/router";
 import Form from "../components/LandingPage/Form";
 import Organizer from "./Organizer";
 
@@ -30,7 +29,7 @@ import {
   Link,
   GridItem,
 } from "@chakra-ui/react";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
+
 import { withTranslation } from "../server/i18n";
 
 const Title = styled.div`
@@ -82,7 +81,7 @@ const TLink = styled(Link)`
 function LandingPageContainer(props) {
   const { t, langId } = props;
   const [isMobile, setisMobile] = useState("");
-
+  const router = useRouter();
   useEffect(() => {
     if (/Mobi/.test(navigator.userAgent) && window.innerWidth < 401) {
       // mobile!
@@ -113,7 +112,7 @@ function LandingPageContainer(props) {
           site_name: "Electronic Beats",
         }}
       />
-      <Form {...props} />
+      {/* <Form {...props} /> */}
       <Hero
         {...props}
         isMobile={isMobile}
@@ -207,8 +206,8 @@ function LandingPageContainer(props) {
               w={["100vw", "90vw"]}
               p={["10px 4vw", "10px 4vw"]}
             >
-              A Telekom Electronic Beats projektje január 17. hétfőtől majdnem
-              egy hónapon át, február 13-ig várja olyan zenei alkotók
+              A Telekom Electronic Beats projektje január 24. hétfőtől majdnem
+              egy hónapon át, február 20-ig várja olyan zenei alkotók
               jelentkezését, akik szeretnék dalaikat a világ elé tárni, igazolva
               azt, hogy a hazai zenéknek is bőven van keresnivalójuk a
               nemzetközi mezőnyben - az elkészült válogatás ugyanis valamennyi
@@ -246,6 +245,25 @@ function LandingPageContainer(props) {
             </Text>
           </VStack>
         </ContentBlockContainer>
+      </VisibilityControl>
+      <VisibilityControl effect="fade" always={false} lazyload>
+        <ContentBlockContainer
+          backgroundColor="#323232"
+          height=""
+          padding="50px 0"
+        >
+          <Button
+            fontFamily="TeleNeoWeb"
+            size="lg"
+            px="5"
+            backgroundColor="#e20074"
+            color="white"
+            colorScheme="magenta"
+            onClick={() => router.push("/jelentkezem")}
+          >
+            Jelentkezem
+          </Button>
+        </ContentBlockContainer>{" "}
       </VisibilityControl>
       {/* <section id="termekek"></section>
       <VStack>

@@ -303,17 +303,14 @@ function Footer(props) {
           </GridItem>
 
           <GridItem
-            letterSpacing="3px"
+            letterSpacing="1px"
             fontSize="xs"
             colSpan={1}
             order={[4, 3]}
           >
             {t("")}
             Electronicbeats.hu
-            <Box letterSpacing="1px" fontSize="80%" p="15px 0">
-              tetszőleges szöveg
-            </Box>
-            <Box letterSpacing="1px" fontSize="80%" p="15px 0">
+            <Box letterSpacing="1px" fontSize="100%" p="10px 0">
               <HStack>
                 <img
                   width="10px"
@@ -322,24 +319,13 @@ function Footer(props) {
                   src="/images/icon_mail-min.png"
                 />
                 <Box>
-                  <a href="mailto:info@safepalwallet.hu">
-                    info(@)electronicbeats(.)hu
+                  <a href="mailto:hungary@electronicbeats.net">
+                    hungary(@)electronicbeats(.)net
                   </a>
                 </Box>
               </HStack>
-              <HStack>
-                <img
-                  width="10px"
-                  height="10px"
-                  alt="phone"
-                  src="/images/icon_phone-min.png"
-                />
-                <Box>
-                  <a href="tel:+36 70 668 86 56">+36 70 668 86 56</a>
-                </Box>
-              </HStack>
             </Box>
-            <Box letterSpacing="1px" fontSize="80%" p="15px 0">
+            <Box letterSpacing="1px" fontSize="80%" p="10px 0">
               <br className="noMobile" />
               <br className="noMobile" />
               Copyright 2022 Electronic Beats.
@@ -347,11 +333,11 @@ function Footer(props) {
           </GridItem>
           <GridItem letterSpacing="" fontSize="xs" colSpan={1} order={[5, 4]}>
             {t("")}
-            <Box letterSpacing="1px" fontSize="80%" p="0px 0">
-              <Link href="/aszf">Általános Szerződési feltételek</Link>
+            <Box letterSpacing="1px" fontSize="100%" p="0px 0">
+              <Link href="/feltetelek">Jelentkezési feltételek</Link>
             </Box>
             <br />
-            <Box letterSpacing="1px" fontSize="80%" p="0px 0">
+            <Box letterSpacing="1px" fontSize="100%" p="0px 0">
               <Link href="/adatvedelmi_nyilatkozat">
                 Adatvédelmi Nyilatkozat
               </Link>

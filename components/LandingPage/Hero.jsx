@@ -20,7 +20,7 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { default as Img } from "next/image";
-import mainImage from "../../public/images/eb/electronicbeats-12.jpg";
+import mainImage from "../../public/images/eb/Electronic_KV_horizontal_without_logos-min.jpeg";
 //import background from "images/background.png";
 
 const ImageBackground = styled.img`
@@ -104,19 +104,24 @@ const SubTitle = styled.div`
 
 function Hero(props) {
   return (
-    <div style={{ zIndex: 1 }}>
+    <Box style={{ zIndex: 1 }} background="#323232">
       <VisibilityControl>
-        <div style={{ width: "100%", height: "100%", position: "relative" }}>
+        <Box
+          width={["100vw", "90vw"]}
+          height="100%"
+          position="relative"
+          margin="auto"
+        >
           <Img
             layout="responsive"
             objectFit="contain"
             alt="Electronic Beats | Talents 2022"
             src={mainImage}
           />
-        </div>
+        </Box>
         <section id="learn-more"></section>
       </VisibilityControl>
-    </div>
+    </Box>
   );
 }
 

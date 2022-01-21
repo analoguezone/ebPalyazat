@@ -31,7 +31,7 @@ const MenuItem = styled.div`
   user-select: none;
   color: white;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   /* margin-right: 15px; */
   padding: 5px 15px;
   align-items: center;
@@ -319,17 +319,19 @@ function Header(props) {
           );
         }}
       </MenuWrapper>
-      <Button
-        fontFamily="TeleNeoWeb"
-        size={["sm", "md"]}
-        px="2"
-        backgroundColor="#e20074"
-        color="white"
-        colorScheme="magenta"
-        onClick={onOpen}
-      >
-        Jelentkezem
-      </Button>
+      <Link href="/jelentkezem">
+        <Button
+          fontFamily="TeleNeoWeb"
+          size={["sm", "md"]}
+          px="2"
+          backgroundColor="#e20074"
+          color="white"
+          colorScheme="magenta"
+          // onClick={onOpen}
+        >
+          Jelentkezem
+        </Button>
+      </Link>
 
       {/* {!isMobile && <LanguageSelector {...props} />} */}
     </Wrapper>

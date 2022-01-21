@@ -10,23 +10,13 @@ function MenuWrapper(props) {
     {
       title: t("Feltételek"),
       // link: "/contact",
-      anchor: "#23",
+      // anchor: "#23",
       //TODO oldalon beluli navigacio
-      link: "/",
+      link: "/feltetelek",
       showAtHeader: true,
       allPages: true,
     },
-    {
-      title: t("Műfajok"),
-      // link: "/contact",
-      anchor: "#termekek",
-      //TODO oldalon beluli navigacio
-      link: "/p",
 
-      showAtHeader: true,
-      allPages: true,
-      // subMenu: [...productData],
-    },
     {
       title: t("Részletek"),
       // link: "/blog",
@@ -48,7 +38,16 @@ function MenuWrapper(props) {
       allPages: true,
     },
     {
-      title: t("vissza"),
+      title: t("Válogatás 2021"),
+      link: "https://www.electronicbeats.hu/sslteb001/",
+      // anchor: "#contact",
+      //TODO oldalon beluli navigacio
+      // link: "/",
+      showAtHeader: true,
+      allPages: true,
+    },
+    {
+      title: t("eb.hu"),
       link: "https://electronicbeats.hu/",
       // anchor: "#contact",
       //TODO oldalon beluli navigacio

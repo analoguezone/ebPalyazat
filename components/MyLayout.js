@@ -16,7 +16,7 @@ const theme = {
   darkGray: "63656a",
   primaryColor: "black",
   primaryColorHighlight: "#7edeb5",
-  backgroundColor: "#262626", //#333635
+  backgroundColor: "#282828", //#333635
 };
 
 const layoutStyle = { overflowX: "hidden" };
@@ -284,7 +284,7 @@ function Layout(props) {
       <style jsx global>{`
         body {
           margin: 0;
-          background-color: white;
+          background-color: #323232;
           // color: white;
           font-family: "TeleNeoWeb";
         }
