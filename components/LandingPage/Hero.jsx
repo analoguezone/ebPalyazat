@@ -113,6 +113,7 @@ function Hero(props) {
           margin="auto"
         >
           <Img
+            priority
             layout="responsive"
             objectFit="contain"
             alt="Electronic Beats | Talents 2022"

@@ -40,7 +40,7 @@ class MyApp extends App {
     // fetchFonts();
 
     TagManager.initialize({
-      gtmId: "GTM-PB36WH8",
+      gtmId: "GTM-MW3ZKX3",
     });
   }
 
