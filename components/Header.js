@@ -70,7 +70,7 @@ const HeaderContainer = styled.div`
   flex-wrap: wrap;
   right: 20px
   top: 20px;
-  max-width:65vw;
+  max-width: calc(100vw - 180px);
   justify-content: flex-end;
   z-index: 20;
 border-bottom: 1px solid grey;
@@ -321,8 +321,10 @@ function Header(props) {
       </MenuWrapper>
       <Link href="/jelentkezem">
         <Button
+          position="absolute"
+          right="5"
           fontFamily="TeleNeoWeb"
-          size={["sm", "md"]}
+          size="md"
           px="2"
           backgroundColor="#e20074"
           color="white"

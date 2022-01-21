@@ -252,17 +252,21 @@ function LandingPageContainer(props) {
           height=""
           padding="50px 0"
         >
-          <Button
-            fontFamily="TeleNeoWeb"
-            size="lg"
-            px="5"
-            backgroundColor="#e20074"
-            color="white"
-            colorScheme="magenta"
-            onClick={() => router.push("/jelentkezem")}
-          >
-            Jelentkezem
-          </Button>
+          <Box pb="12">
+            <Button
+              fontFamily="TeleNeoWeb"
+              size="lg"
+              px="5"
+              py="5"
+              fontSize="3xl"
+              backgroundColor="#e20074"
+              color="white"
+              colorScheme="magenta"
+              onClick={() => router.push("/jelentkezem")}
+            >
+              Jelentkezem
+            </Button>
+          </Box>
         </ContentBlockContainer>{" "}
       </VisibilityControl>
       {/* <section id="termekek"></section>
