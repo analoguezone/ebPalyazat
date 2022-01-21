@@ -10,7 +10,7 @@ import ScrollPositionProvider from "../components/VisibilityControl/ScrollPositi
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 import { appWithTranslation } from "../server/i18n";
-import TagManager from "react-gtm-module";
+// import TagManager from "react-gtm-module";
 
 class MyApp extends App {
   // Only uncomment this method if you have blocking data requirements for
@@ -38,11 +38,9 @@ class MyApp extends App {
     //   // console.log("font load error");
     // };
     // fetchFonts();
-
-    TagManager.initialize({
-      gtmId: "GTM-MW3ZKX3",
-    });
-    console.log(TagManager);
+    // TagManager.initialize({
+    //   gtmId: "GTM-MW3ZKX3",
+    // });
   }
 
   render() {

@@ -44,7 +44,8 @@ export default class MyDocument extends Document {
     return (
       <Html lang={language} dir={languageDirection}>
         <Head>
-          {/* <script
+          <script
+            nonce="{SERVER-GENERATED-NONCE}"
             dangerouslySetInnerHTML={{
               __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -52,15 +53,15 @@ export default class MyDocument extends Document {
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-MW3ZKX3');`,
             }}
-          ></script> */}
+          ></script>
         </Head>
         <body style={{ backgroundColor: "#323232" }}>
-          {/* <noscript
+          <noscript
             dangerouslySetInnerHTML={{
               __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MW3ZKX3"
             height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
             }}
-          ></noscript> */}
+          ></noscript>
 
           <Main />
           <NextScript />
