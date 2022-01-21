@@ -20,7 +20,7 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { default as Img } from "next/image";
-import mainImage from "../../public/images/eb/Electronic_KV_horizontal_without_logos-min.jpeg";
+import mainImage from "../../public/images/eb/electronicbeats-12.jpg";
 //import background from "images/background.png";
 
 const ImageBackground = styled.img`
