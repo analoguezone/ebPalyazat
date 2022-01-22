@@ -322,7 +322,8 @@ function Header(props) {
       <Link href="/jelentkezem">
         <Button
           position="absolute"
-          right="5"
+          right={["2", "5"]}
+          top={["-1px", "2"]}
           fontFamily="TeleNeoWeb"
           size="md"
           px="2"

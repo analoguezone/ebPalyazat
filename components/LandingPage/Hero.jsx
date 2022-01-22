@@ -20,7 +20,8 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { default as Img } from "next/image";
-import mainImage from "../../public/images/eb/electronicbeats-12.jpg";
+import mainImage from "../../public/images/eb/electronicbeats-12-min.jpg";
+import mainImageMobile from "../../public/images/eb/Electronic_KV_vertical-01-min.png";
 //import background from "images/background.png";
 
 const ImageBackground = styled.img`
@@ -103,6 +104,7 @@ const SubTitle = styled.div`
 `;
 
 function Hero(props) {
+  const { isMobile } = props;
   return (
     <Box style={{ zIndex: 1 }} background="#323232">
       <VisibilityControl>
@@ -117,7 +119,7 @@ function Hero(props) {
             layout="responsive"
             objectFit="contain"
             alt="Electronic Beats | Talents 2022"
-            src={mainImage}
+            src={isMobile ? mainImageMobile : mainImage}
           />
         </Box>
         <section id="learn-more"></section>

@@ -150,7 +150,7 @@ function LandingPageContainer(props) {
               p={["10px 4vw", "10px 4vw"]}
               pb={["20px", "40px"]}
             >
-              Január 17-től pop, klub és kísérletizene kategóriában várják a
+              Január 24-től pop, klub és kísérletizene kategóriában várják a
               jelentkezéseket.
             </Heading>
             <Text
