@@ -118,7 +118,7 @@ function Hero(props) {
             priority
             layout="responsive"
             objectFit="contain"
-            alt="Electronic Beats | Talents 2022"
+            alt="Electronic Beats | Talent2022"
             src={isMobile ? mainImageMobile : mainImage}
           />
         </Box>

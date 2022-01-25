@@ -7,6 +7,17 @@ import { withTranslation } from "../../server/i18n";
 function MenuWrapper(props) {
   const { t } = props;
   const menuItems = [
+
+    {
+      title: t("Talent 22"),
+      // link: "/blog",
+      anchor: "#reszletek",
+      //TODO oldalon beluli navigacio
+      // link: "/b",
+      showAtHeader: true,
+      // allPages: true,
+      // subMenu: [...blogData],
+    },
     {
       title: t("Feltételek"),
       // link: "/contact",
@@ -17,34 +28,24 @@ function MenuWrapper(props) {
       allPages: true,
     },
 
+    // {
+    //   title: t("contact"),
+    //   // link: "/contact",
+    //   anchor: "#contact",
+    //   //TODO oldalon beluli navigacio
+    //   link: "/",
+    //   showAtHeader: true,
+    //   allPages: true,
+    // },
     {
-      title: t("Részletek"),
-      // link: "/blog",
-      anchor: "#reszletek",
-      //TODO oldalon beluli navigacio
-      // link: "/b",
-      showAtHeader: true,
-      allPages: true,
-      // subMenu: [...blogData],
-    },
-
-    {
-      title: t("contact"),
-      // link: "/contact",
-      anchor: "#contact",
-      //TODO oldalon beluli navigacio
-      link: "/",
-      showAtHeader: true,
-      allPages: true,
-    },
-    {
-      title: t("Válogatás 2021"),
+      title: t("Válogatás 2020"),
       link: "https://www.electronicbeats.hu/sslteb001/",
       // anchor: "#contact",
       //TODO oldalon beluli navigacio
       // link: "/",
       showAtHeader: true,
       allPages: true,
+      externalLink: true,
     },
     {
       title: t("eb.hu"),
@@ -54,6 +55,7 @@ function MenuWrapper(props) {
       // link: "/",
       showAtHeader: true,
       allPages: true,
+      externalLink: true,
     },
   ];
 

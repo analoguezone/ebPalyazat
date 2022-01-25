@@ -79,9 +79,9 @@ export default withTranslation("common")(function aszf(props) {
             fontSize={["md", "lg", "xl", "xl"]}
             p={["10px 0vw", "10px 0vw"]}
           >
-            2022. január 24. napjától, hétfőtől három héten át – 2022. február
+            2022. Január 25. napjától, keddtől három héten át – 2022. február
             20-a, vasárnap éjfélig - A Telekom Electronic Beats projektje január
-            17. hétfőtől majdnem egy hónapon át, február 13-ig várja olyan zenei
+            17. keddtől majdnem egy hónapon át, február 13-ig várja olyan zenei
             producerek jelentkezését, akik szeretnék dalaikat a világ elé tárni,
             igazolva azt, hogy a hazai zenéknek is bőven van keresnivalójuk a
             nemzetközi mezőnyben - az elkészült válogatás ugyanis valamennyi

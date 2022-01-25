@@ -96,17 +96,17 @@ function LandingPageContainer(props) {
   return (
     <div>
       <NextSeo
-        title="Electronic Beats | Talents 2022"
+        title="Electronic Beats | Talent 2022"
         description="Electronic Beats tehetségkutató pályázat"
         openGraph={{
-          title: " | Electronic Beats",
+          title: "Talent| Electronic Beats",
           description: "Electronic Beats tehetségkutató pályázat",
           images: [
             {
               url: `/images/eb/electronicbeats-12.jpg`,
               width: 1280,
               height: 634,
-              alt: "Electronic Beats | Talents 2022",
+              alt: "Electronic Beats | Talentv2022",
             },
           ],
           site_name: "Electronic Beats",
@@ -150,7 +150,7 @@ function LandingPageContainer(props) {
               p={["10px 4vw", "10px 4vw"]}
               pb={["20px", "40px"]}
             >
-              Január 24-től pop, klub és kísérletizene kategóriában várják a
+              Január 25-től pop, klub és kísérletizene kategóriában várjuk a
               jelentkezéseket.
             </Heading>
             <Text
@@ -187,10 +187,10 @@ function LandingPageContainer(props) {
               kiadótulajdonosból, dj-ből és zenei újságíróból álló szakmai zsűri
               részvételével{" "}
               <TLink href={"https://www.electronicbeats.hu/sslteb001/"}>
-                több mint hatszáz jelentkezőből válogatták ki 30+1 zenészt, akik
-                felkerültek tripla válogatásukra,
+                több mint hatszáz jelentkezőből válogattunk ki 30+1 zenészt, akik
+                felkerültek tripla válogatásunkra,
               </TLink>{" "}
-              és most is ugyanebben a formátumban gondolkodnak - az elbírálásban
+              és most is ugyanebben a formátumban gondolkodunk - az elbírálásban
               ezúttal részt vesz majd az ország egyik legnagyobbat brillírozó
               rappere, BetonHofi, az elsöprő dalairól ismert Carson Coma, a
               budapesti-londoni tengelyen mozgó énekesnő, Solére, illetve a
@@ -206,7 +206,7 @@ function LandingPageContainer(props) {
               w={["100vw", "90vw"]}
               p={["10px 4vw", "10px 4vw"]}
             >
-              A Telekom Electronic Beats projektje január 24. hétfőtől majdnem
+              A Telekom Electronic Beats projektje Január 25. keddtől majdnem
               egy hónapon át, február 20-ig várja olyan zenei alkotók
               jelentkezését, akik szeretnék dalaikat a világ elé tárni, igazolva
               azt, hogy a hazai zenéknek is bőven van keresnivalójuk a
@@ -264,7 +264,7 @@ function LandingPageContainer(props) {
               colorScheme="magenta"
               onClick={() => router.push("/jelentkezem")}
             >
-              Jelentkezem
+              JELENTKEZEM
             </Button>
           </Box>
         </ContentBlockContainer>{" "}

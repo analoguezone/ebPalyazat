@@ -277,7 +277,7 @@ function Footer(props) {
             color="#e20074"
             order={[1, 1]}
           >
-            {t("Inforációk")}
+            {t("Kapcsolat")}
           </GridItem>
           <GridItem
             fontWeight="bold"
@@ -340,6 +340,14 @@ function Footer(props) {
             <Box letterSpacing="1px" fontSize="100%" p="0px 0">
               <Link href="/adatvedelmi_nyilatkozat">
                 Adatvédelmi Nyilatkozat
+              </Link>
+            </Box>
+            <br />
+            <Box letterSpacing="1px" fontSize="100%" p="0px 0">
+              <Link passHref href="https://electronicbeats.hu/">
+                <a target="_blank">
+                eb.hu
+                </a>
               </Link>
             </Box>
           </GridItem>

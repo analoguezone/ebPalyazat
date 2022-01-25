@@ -259,7 +259,10 @@ function Header(props) {
                                 )
                               }
                               onClick={() => {
-                                window.location.href = link;
+                                window.open(
+                                  link,
+                                  "_blank" // <- This is what makes it open in a new window.
+                                );
                               }}
                             >
                               {title}
@@ -332,7 +335,7 @@ function Header(props) {
           colorScheme="magenta"
           // onClick={onOpen}
         >
-          Jelentkezem
+          JELENTKEZEM
         </Button>
       </Link>
 
