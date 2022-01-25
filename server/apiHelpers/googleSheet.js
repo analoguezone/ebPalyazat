@@ -42,7 +42,8 @@ module.exports.sendForm = async function sendForm(formData) {
   // doc.useApiKey(process.env.GOOGLE_API_KEY);
   await doc.loadInfo(); // loads document properties and worksheets
   console.log(doc.title);
-  const sheet = doc.sheetsByIndex[0];
+  const sheet = doc.sheetsByTitle[formData.alkotas_stilusa];
+
   try {
     const larryRow = await sheet.addRow(formData);
     return "success";
