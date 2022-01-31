@@ -240,8 +240,14 @@ function Header(props) {
                 menuItemsAtTheHeader
                   .filter((x) => x.allPages || router.route == "/")
                   .map((menuItem) => {
-                    const { title, link, externalLink, anchor, offset } =
-                      menuItem;
+                    const {
+                      title,
+                      link,
+                      externalLink,
+                      anchor,
+                      anchorUrl,
+                      offset,
+                    } = menuItem;
                     return (
                       <div style={{ margin: "auto 0" }} key={title}>
                         <VisibilityControl>
@@ -282,12 +288,21 @@ function Header(props) {
                               }
                               onClick={() => setShowSubMenu(null)}
                             >
-                              <AnchorLink
-                                offset={offset ? offset : 0}
-                                href={anchor}
-                              >
-                                {title}
-                              </AnchorLink>
+                              {anchorUrl ? (
+                                <Link
+                                  offset={offset ? offset : 0}
+                                  href={anchorUrl + anchor}
+                                >
+                                  {title}
+                                </Link>
+                              ) : (
+                                <AnchorLink
+                                  offset={offset ? offset : 0}
+                                  href={anchor}
+                                >
+                                  {title}
+                                </AnchorLink>
+                              )}
                             </MenuItem>
                           ) : (
                             <Link href={link} passHref>

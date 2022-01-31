@@ -16,7 +16,7 @@ function MenuWrapper(props) {
       //TODO oldalon beluli navigacio
       // link: "/b",
       showAtHeader: true,
-      // allPages: true,
+       allPages: true,
       // subMenu: [...blogData],
     },
     {
