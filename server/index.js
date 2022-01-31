@@ -17,6 +17,14 @@ const { DESTINATION, createSitemap } = require("./sitemap");
 
 const port = process.env.PORT || 3570;
 
+var encodeHtmlEntity = function (str) {
+  var buf = [];
+  for (var i = str.length - 1; i >= 0; i--) {
+    buf.unshift(["&#", str[i].charCodeAt(), ";"].join(""));
+  }
+  return buf.join("");
+};
+
 nextApp.prepare().then(async () => {
   const app = express();
 
@@ -75,6 +83,23 @@ nextApp.prepare().then(async () => {
     if (response.success) {
       const response = await sendForm(formData);
       console.log(formData);
+
+      // const response = await sendMail({
+      //   to: formdata?.email, //req.user.email,
+      //   subject: "Talent 22 Jelentkezés visszaigazolás",
+      //   body: `
+      //   <p>${encodeHtmlEntity(`Kedves ${formdata?.polgari_nev}!`)}</p>
+      //   <p>&nbsp;</p>
+      //   <p>&nbsp;</p>
+      //   <p>${encodeHtmlEntity(
+      //     `Köszönjük, hogy jelentkeztél, a zsűri hamarosan ráveti magát a zenédre! 🙂 Figyeld az electronicbeats.hu-t!`
+      //   )}</p>
+      //   <p>&nbsp;</p>
+      //   <p>&nbsp;</p>
+      //   <p>A Telekom Electronic Beats csapata</p>
+      //  `,
+      // });
+
       res.send({ message: response });
     } else {
       res.send({ message: response });

@@ -31,9 +31,10 @@ export default withTranslation("common")(function privacyData(props) {
         }}
       >
         <Box
-          padding="50px"
+          padding={["50px 25px","50px"]}
           margin="50px auto"
-          width={["90vw"]}
+          width={["100vw"]}
+          maxW="1280px"
           backgroundColor="#323232"
           color="white"
         >
@@ -84,6 +85,7 @@ export default withTranslation("common")(function privacyData(props) {
             templateColumns="repeat(4, 1fr)"
             gap={1}
             fontSize={["md", "lg", "xl", "xl"]}
+          
           >
             <GridItem colSpan={1} bg="#383838">
               <Text p="2">Az adatkezelés célja</Text>

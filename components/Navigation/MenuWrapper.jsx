@@ -12,6 +12,7 @@ function MenuWrapper(props) {
       title: t("Talent 22"),
       // link: "/blog",
       anchor: "#reszletek",
+      anchorUrl:"/",
       //TODO oldalon beluli navigacio
       // link: "/b",
       showAtHeader: true,

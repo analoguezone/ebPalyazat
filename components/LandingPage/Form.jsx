@@ -171,6 +171,8 @@ export default function Form(props) {
     return failed;
   }
 
+
+  
   const submitHandler = useCallback(
     async function submitHandler() {
       const captchaToken = await handleReCaptchaVerify();
@@ -194,7 +196,9 @@ export default function Form(props) {
       const data = await res.json();
       if (data.message == "success") {
         // setsending(false);
+        
         router.push("/sikeres-jelentkezes");
+
       }
       setsending(false);
     },

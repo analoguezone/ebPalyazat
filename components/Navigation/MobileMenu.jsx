@@ -125,7 +125,7 @@ function MobileMenu(props) {
     <Container opacity={opacity}>
       <ContentWrapper>
         {menuItems.map((menuItem) => {
-          const { title, link, externalLink, anchor, offset } = menuItem;
+          const { title, link, externalLink, anchor,anchorUrl, offset } = menuItem;
           return (
             <div>
               {externalLink ? (
@@ -138,9 +138,12 @@ function MobileMenu(props) {
                 </MenuItem>
               ) : anchor ? (
                 <MenuItem onClick={clickHandler}>
-                  <AnchorLink offset={offset ? offset : 0} href={anchor}>
+                  {anchorUrl?<Link offset={offset ? offset : 0} href={anchorUrl+anchor}>
                     {title}
-                  </AnchorLink>
+                  </Link>
+                  :                <AnchorLink offset={offset ? offset : 0} href={anchor}>
+                    {title}
+                  </AnchorLink>}
                 </MenuItem>
               ) : (
                 <Link key={link} href={link} passHref>

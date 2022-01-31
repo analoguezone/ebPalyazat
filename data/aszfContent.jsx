@@ -32,9 +32,10 @@ export default withTranslation("common")(function aszf(props) {
         }}
       >
         <Box
-          padding="50px"
+          padding={["50px 25px","50px"]}
           margin="50px auto"
-          width={["90vw"]}
+          width={["100vw"]}
+          maxW="1280px"
           backgroundColor="#323232"
           color="white"
         >

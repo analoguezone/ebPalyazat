@@ -26,8 +26,8 @@ module.exports.sendMail = async ({ to, body, subject, attachments }) => {
   try {
     // send mail with defined transport object
     let info = await transporter.sendMail({
-      from: '"SafePal Wallet Contact Form" <info@safepalwallet.hu>', // sender address
-      to: `${to}, info@safepalwallet.hu`, // list of receivers
+      from: '"Talent 22 | Electronic Beats" <info@safepalwallet.hu>', // sender address
+      to: `${to}`, // list of receivers
       subject: subject, // Subject line
       html: body, // html body
       attachments,

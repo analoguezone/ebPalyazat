@@ -23,7 +23,7 @@ const resolveApp = (relativePath) => path.resolve(appDirectory, relativePath);
 
 // SITE_ROOT is the domain of your app
 // Update example.com with your domain or set the env variable
-const SITE_ROOT = process.env.SITE_ROOT || "https://talents.electronicbeats.hu";
+const SITE_ROOT = process.env.SITE_ROOT || "https://talent.electronicbeats.hu";
 
 // SOURCE is where are stored all pages files
 // By default it tracks all files in the pages folder
