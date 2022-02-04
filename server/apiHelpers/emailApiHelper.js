@@ -12,7 +12,7 @@ var encodeHtmlEntity = function (str) {
 };
 
 // async..await is not allowed in global scope, must use a wrapper
-module.exports.sendMail = async ({ to, subject, attachments, formdata }) => {
+module.exports.sendMail = async ({ to, subject, attachments, formData }) => {
   // Generate test SMTP service account from ethereal.email
   // Only needed if you don't have a real mail account for testing
   //let testAccount = await nodemailer.createTestAccount();
@@ -37,7 +37,7 @@ module.exports.sendMail = async ({ to, subject, attachments, formdata }) => {
       from: '"Talent 22 | Electronic Beats" <hungary@electronicbeats.net>', // sender address
       to: to, // list of receivers
       subject: "Talent 22 Jelentkezés visszaigazolás", // Subject line
-      html: body({ formdata }), // html body
+      html: body({ formData }), // html body
       attachments: [
         {
           filename: "logo.png",
