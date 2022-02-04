@@ -84,7 +84,7 @@ nextApp.prepare().then(async () => {
       const response = await sendForm(formData);
       console.log(formData);
 
-      const response = await sendMail({
+      const emailResp = await sendMail({
         to: formdata?.email, //req.user.email,
         subject: "Talent 22 Jelentkezés visszaigazolás",
         formdata,

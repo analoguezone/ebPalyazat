@@ -61,6 +61,7 @@ const body = function ({ polgari_nev }) {
   <div style="padding:50px">
   <p>&nbsp;</p>
         <p>&nbsp;</p>
+        <h2 style="padding:50px">${encodeHtmlEntity(` `)}</h2>
         <h2 style="padding:50px">${encodeHtmlEntity(
           `Kedves ${polgari_nev}!`
         )}</h2>
@@ -113,7 +114,7 @@ async function init() {
   }
 }
 
-init();
+// init();
 
 // module.exports.sendMail = async ({ to, body, subject, attachments }) => {
 //   // Generate test SMTP service account from ethereal.email
