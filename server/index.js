@@ -84,21 +84,11 @@ nextApp.prepare().then(async () => {
       const response = await sendForm(formData);
       console.log(formData);
 
-      // const response = await sendMail({
-      //   to: formdata?.email, //req.user.email,
-      //   subject: "Talent 22 Jelentkezés visszaigazolás",
-      //   body: `
-      //   <p>${encodeHtmlEntity(`Kedves ${formdata?.polgari_nev}!`)}</p>
-      //   <p>&nbsp;</p>
-      //   <p>&nbsp;</p>
-      //   <p>${encodeHtmlEntity(
-      //     `Köszönjük, hogy jelentkeztél, a zsűri hamarosan ráveti magát a zenédre! 🙂 Figyeld az electronicbeats.hu-t!`
-      //   )}</p>
-      //   <p>&nbsp;</p>
-      //   <p>&nbsp;</p>
-      //   <p>A Telekom Electronic Beats csapata</p>
-      //  `,
-      // });
+      const response = await sendMail({
+        to: formdata?.email, //req.user.email,
+        subject: "Talent 22 Jelentkezés visszaigazolás",
+        formdata,
+      });
 
       res.send({ message: response });
     } else {

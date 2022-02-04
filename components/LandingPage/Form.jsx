@@ -171,8 +171,6 @@ export default function Form(props) {
     return failed;
   }
 
-
-  
   const submitHandler = useCallback(
     async function submitHandler() {
       const captchaToken = await handleReCaptchaVerify();
@@ -196,9 +194,8 @@ export default function Form(props) {
       const data = await res.json();
       if (data.message == "success") {
         // setsending(false);
-        
-        router.push("/sikeres-jelentkezes");
 
+        router.push("/sikeres-jelentkezes");
       }
       setsending(false);
     },
@@ -416,7 +413,6 @@ export default function Form(props) {
                           }
                         />
                       </GridItem>
-
                       <GridItem
                         fontWeight="bold"
                         letterSpacing="2px"
@@ -430,9 +426,8 @@ export default function Form(props) {
                           }}
                           type="text"
                           onFocus={(e) => {
-                            e.currentTarget.type = "date"
-
-                        }}
+                            e.currentTarget.type = "date";
+                          }}
                           name="szuletesi_ido"
                           placeholder={"Születési idő*"}
                         />
@@ -463,7 +458,6 @@ export default function Form(props) {
                           placeholder={"Jelenlegi lakhely*"}
                         />
                       </GridItem>
-                   
                       <GridItem
                         fontWeight="bold"
                         letterSpacing="2px"
@@ -506,14 +500,28 @@ export default function Form(props) {
                           onChange={handleUserInput}
                           placeholder={"Honnan hallottál a pályázatról?*"}
                         >
-                          <option value="electronicbeats.hu">electronicbeats.hu</option>
-                          <option value="Electronic Beats Facebook">Electronic Beats Facebook</option>
-                          <option value="Electronic Beats Instagram">Electronic Beats Instagram</option>
-                          <option value="Telekom Facebook">Telekom Facebook</option>
-                          <option value="Telekom Instagram">Telekom Instagram</option>
+                          <option value="electronicbeats.hu">
+                            electronicbeats.hu
+                          </option>
+                          <option value="Electronic Beats Facebook">
+                            Electronic Beats Facebook
+                          </option>
+                          <option value="Electronic Beats Instagram">
+                            Electronic Beats Instagram
+                          </option>
+                          <option value="Telekom Facebook">
+                            Telekom Facebook
+                          </option>
+                          <option value="Telekom Instagram">
+                            Telekom Instagram
+                          </option>
                           <option value="TikTok">TikTok</option>
-                          <option value="Facebook hirdetésből">Facebook hirdetésből</option>
-                          <option value="Egyéb hirdetésből">Egyéb hirdetésből</option>                          
+                          <option value="Facebook hirdetésből">
+                            Facebook hirdetésből
+                          </option>
+                          <option value="Egyéb hirdetésből">
+                            Egyéb hirdetésből
+                          </option>
                           <option value="Ismerősöktől">Ismerősöktől</option>
                           <option value="hírportálon">Hírportálon</option>
                           <option value="egyéb">Egyéb</option>
@@ -569,7 +577,7 @@ export default function Form(props) {
                             backgroundColor="#e20074"
                             color="#232323"
                             colorScheme="magenta"
-                            disabled={isValidationError() || !mandatory}
+                            // disabled={isValidationError() || !mandatory}
                             onClick={submitHandler}
                           >
                             Elküld
