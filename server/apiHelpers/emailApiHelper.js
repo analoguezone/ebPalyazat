@@ -37,7 +37,7 @@ module.exports.sendMail = async ({ to, subject, attachments, formData }) => {
       from: '"Talent 22 | Electronic Beats" <hungary@electronicbeats.net>', // sender address
       to: to, // list of receivers
       subject: "Talent 22 Jelentkezés visszaigazolás", // Subject line
-      html: body({ formData }), // html body
+      html: body(formData), // html body
       attachments: [
         {
           filename: "logo.png",
