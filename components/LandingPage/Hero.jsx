@@ -20,7 +20,7 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { default as Img } from "next/image";
-import mainImage from "../../public/images/eb/Electronic_KV_Grey-04-min.png";
+import mainImage from "../../public/images/eb/Electronic_KV_Grey_NEW_LOGO-06-min.png";
 import mainImageMobile from "../../public/images/eb/Electronic_KV_Grey-09-min.png";
 //import background from "images/background.png";
 
@@ -118,7 +118,7 @@ function Hero(props) {
             priority
             layout="responsive"
             objectFit="contain"
-            alt="Electronic Beats | Talent2022"
+            alt="Electronic Beats | Szelektor 2022"
             src={isMobile ? mainImageMobile : mainImage}
           />
         </Box>

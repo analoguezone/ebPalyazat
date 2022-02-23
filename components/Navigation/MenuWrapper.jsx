@@ -7,16 +7,15 @@ import { withTranslation } from "../../server/i18n";
 function MenuWrapper(props) {
   const { t } = props;
   const menuItems = [
-
     {
-      title: t("Talent 22"),
+      title: t("Szelektor 22"),
       // link: "/blog",
       anchor: "#reszletek",
-      anchorUrl:"/",
+      anchorUrl: "/",
       //TODO oldalon beluli navigacio
       // link: "/b",
       showAtHeader: true,
-       allPages: true,
+      allPages: true,
       // subMenu: [...blogData],
     },
     {

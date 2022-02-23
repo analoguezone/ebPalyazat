@@ -96,17 +96,17 @@ function LandingPageContainer(props) {
   return (
     <div>
       <NextSeo
-        title="Electronic Beats | Talent 2022"
+        title="Electronic Beats | Szelektor 2022"
         description="Electronic Beats tehetségkutató pályázat"
         openGraph={{
-          title: "Talent| Electronic Beats",
+          title: "Szelektor| Electronic Beats",
           description: "Electronic Beats tehetségkutató pályázat",
           images: [
             {
               url: `/images/eb/electronicbeats-12.jpg`,
               width: 1280,
               height: 634,
-              alt: "Electronic Beats | Talentv2022",
+              alt: "Electronic Beats | Szelektor 2022",
             },
           ],
           site_name: "Electronic Beats",
@@ -187,8 +187,8 @@ function LandingPageContainer(props) {
               kiadótulajdonosból, dj-ből és zenei újságíróból álló szakmai zsűri
               részvételével{" "}
               <TLink href={"https://www.electronicbeats.hu/sslteb001/"}>
-                több mint hatszáz jelentkezőből válogattunk ki 30+1 zenészt, akik
-                felkerültek tripla válogatásunkra,
+                több mint hatszáz jelentkezőből válogattunk ki 30+1 zenészt,
+                akik felkerültek tripla válogatásunkra,
               </TLink>{" "}
               és most is ugyanebben a formátumban gondolkodunk - az elbírálásban
               ezúttal részt vesz majd az ország egyik legnagyobbat brillírozó

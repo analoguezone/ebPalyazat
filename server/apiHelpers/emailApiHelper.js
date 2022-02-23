@@ -34,9 +34,9 @@ module.exports.sendMail = async ({ to, subject, attachments, formData }) => {
   try {
     // send mail with defined transport object
     let info = await transporter.sendMail({
-      from: '"Talent 22 | Electronic Beats" <hungary@electronicbeats.net>', // sender address
+      from: '"Szelektor 22 | Electronic Beats" <hungary@electronicbeats.net>', // sender address
       to: to, // list of receivers
-      subject: "Talent 22 Jelentkezés visszaigazolás", // Subject line
+      subject: "Szelektor 22 Jelentkezés visszaigazolás", // Subject line
       html: body(formData), // html body
       attachments: [
         {
@@ -93,9 +93,9 @@ async function init() {
   try {
     // send mail with defined transport object
     let info = await transporter.sendMail({
-      from: '"Talent 22 | Electronic Beats" <hungary@electronicbeats.net>', // sender address
+      from: '"Szelektor 22 | Electronic Beats" <hungary@electronicbeats.net>', // sender address
       to: `${"peter.takacs@1data.hu"}`, // list of receivers
-      subject: "Talent 22 Jelentkezés visszaigazolás", // Subject line
+      subject: "Szelektor 22 Jelentkezés visszaigazolás", // Subject line
       html: body({ polgari_nev: "Taki" }), // html body
       attachments: [
         {
@@ -138,7 +138,7 @@ async function init() {
 //   try {
 //     // send mail with defined transport object
 //     let info = await transporter.sendMail({
-//       from: '"Talent 22 | Electronic Beats" <info@safepalwallet.hu>', // sender address
+//       from: '"Szelektor 22 | Electronic Beats" <info@safepalwallet.hu>', // sender address
 //       to: `${to}`, // list of receivers
 //       subject: subject, // Subject line
 //       html: body, // html body
