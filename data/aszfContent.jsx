@@ -32,7 +32,7 @@ export default withTranslation("common")(function aszf(props) {
         }}
       >
         <Box
-          padding={["50px 25px","50px"]}
+          padding={["50px 25px", "50px"]}
           margin="50px auto"
           width={["100vw"]}
           maxW="1280px"
@@ -56,9 +56,9 @@ export default withTranslation("common")(function aszf(props) {
             lineHeight={["2rem", "3rem", "4rem", "4rem"]}
             p={["40px 0vw", "60px 0vw"]}
           >
-            Telekom Electronic Beats Digitális Kiadó: Magyar jövőbe magyar
-            zenét! A Telekom Electronic Beats keresi a legjobb 2022-es dalokat,
-            amikből újabb válogatáslemez készül
+            Telekom Electronic Beats Szelektor: Magyar jövőbe magyar zenét! A
+            Telekom Electronic Beats keresi a legjobb 2022-es dalokat, amikből
+            újabb válogatáslemez készül
           </Heading>
           <Text
             fontFamily="TeleNeoWeb"
@@ -80,13 +80,14 @@ export default withTranslation("common")(function aszf(props) {
             fontSize={["md", "lg", "xl", "xl"]}
             p={["10px 0vw", "10px 0vw"]}
           >
-            2022. Január 25. napjától, keddtől három héten át – 2022. február
-            20-a, vasárnap éjfélig - A Telekom Electronic Beats projektje január
-            17. keddtől majdnem egy hónapon át, február 13-ig várja olyan zenei
-            producerek jelentkezését, akik szeretnék dalaikat a világ elé tárni,
-            igazolva azt, hogy a hazai zenéknek is bőven van keresnivalójuk a
-            nemzetközi mezőnyben - az elkészült válogatás ugyanis valamennyi
-            jelentős streaming platformon elérhetővé válik majd tavasszal
+            2022. március 1., kedd reggel 8 órától, szűk egy hónapon át – 2022.
+            március 27-e, vasárnap éjfélig - A Telekom Electronic Beats
+            projektje január 17. keddtől majdnem egy hónapon át, február 13-ig
+            várja olyan zenei producerek jelentkezését, akik szeretnék dalaikat
+            a világ elé tárni, igazolva azt, hogy a hazai zenéknek is bőven van
+            keresnivalójuk a nemzetközi mezőnyben - az elkészült válogatás
+            ugyanis valamennyi jelentős streaming platformon elérhetővé válik
+            majd tavasszal
           </Text>
           <Text
             fontFamily="TeleNeoWeb"
@@ -101,8 +102,11 @@ export default withTranslation("common")(function aszf(props) {
             követően (köszönhetően az Analogue Zone-nak), biztosítva a tökéletes
             megszólalást. A kiválasztott zenék szerzői pénzjutalomban
             részesülnek, a Keretblog és Elle Magazin felajánlásának köszönhetően
-            két különdíj is elnyerhető. A fődíj pedig egy MacBook Pro 16” (10
-            magos CPU, 32 magos GPU, 1 TB SSD) készülék.
+            két különdíj is elnyerhető, vagy fellépési lehetőség a Telekom Volt
+            Fesztiválon, valamint zenei producer képzésen való részvétel az
+            imPro School által szervezett programban. A fődíj pedig egy MacBook
+            Pro 16” (10 magos CPU, 32 magos GPU, 1 TB SSD) készülék Ableton Live
+            licensszel.
           </Text>
           <Text
             fontFamily="TeleNeoWeb"
@@ -111,14 +115,14 @@ export default withTranslation("common")(function aszf(props) {
             p={["10px 0vw", "10px 0vw"]}
           >
             A Telekom Electronic Beats folyamatosan frissített Spotify
-            lejátszási listáin már futó hármas tematika alapján Popping (azaz
-            popzene), Clubbing (vagyis éjszakai táncparketteket célzó zenék) és
-            Xperimenting (kísérleti darabok) kategóriákban lehet indulni kettő
-            és nyolc perc közötti zenei dolgozatokkal. Ennél több feltételt nem
-            is szeretne szabni a TEB csapata, akik hisznek abban, hogy ugyan
-            most fizikai korlátok közé vagyunk szorítva, együtt mégis egy olyan,
-            határokon átívelő dolgot lehet létrehozni, amire az utánunk jövő
-            generációk is boldogan nyomják meg a play gombot.
+            lejátszási listáin már futó hármas tematika alapján Pop , Club
+            (vagyis éjszakai táncparketteket célzó zenék) és Xperi (kísérleti
+            darabok) kategóriákban lehet indulni kettő és nyolc perc közötti
+            zenei dolgozatokkal. Ennél több feltételt nem is szeretne szabni a
+            TEB csapata, akik hisznek abban, hogy ugyan most fizikai korlátok
+            közé vagyunk szorítva, együtt mégis egy olyan, határokon átívelő
+            dolgot lehet létrehozni, amire az utánunk jövő generációk is
+            boldogan nyomják meg a play gombot.
           </Text>{" "}
           <Text
             fontFamily="TeleNeoWeb"
@@ -139,13 +143,13 @@ export default withTranslation("common")(function aszf(props) {
                 A Pályázat a Magyar Telekom Nyrt. (Cg. 01-10-041928, 1097
                 Budapest, Könyves Kálmán krt. 36., a továbbiakban Szervező)
                 által kerül lebonyolításra. Adatfeldolgozó: Art Village Kft.
-                (1055 Budapest, Balaton utca 23. ASZ: 12719956-2-41)
+                (1082 Budapest, Vajdahunyad utca 4. ASZ: 12719956-2-42)
               </Text>
             </ListItem>
             <ListItem>
               <Text>
                 A pályázatra a Szervező kizárólag elektronikus úton várja a
-                jelentkezést 2022. január 17. napjától 2022. február 13.
+                jelentkezést 2022. március 1. reggel 8 órától 2022. március 27.
                 éjfélig. Az elkészült alkotásokat az előre erre a célra
                 létrehozott weboldalra kell feltölteni.
               </Text>
@@ -213,13 +217,13 @@ export default withTranslation("common")(function aszf(props) {
               </Text>
               <UnorderedList>
                 <ListItem>
-                  <Text>Popping (azaz könnyebben befogadható popzene)</Text>
+                  <Text>Pop (azaz könnyebben befogadható popzene)</Text>
                 </ListItem>
                 <ListItem>
-                  <Text>Clubbing (elektronikus, klubbarát tánczenék)</Text>
+                  <Text>Club (elektronikus, klubbarát tánczenék)</Text>
                 </ListItem>
                 <ListItem>
-                  <Text>Xperimenting (kísérleti zenék)</Text>
+                  <Text>Xperi (kísérleti zenék)</Text>
                 </ListItem>
               </UnorderedList>
             </ListItem>

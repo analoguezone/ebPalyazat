@@ -206,7 +206,7 @@ export default function Form(props) {
     <Modal onClose={() => router.push("/")} size={"full"} isOpen={true}>
       <ModalOverlay />
       <ModalContent>
-        <ModalCloseButton color="white" />
+        <ModalCloseButton color="white" size="xl" mr="2" mt="2" />
         <ModalBody backgroundColor="#232323">
           <Center>
             <Container>
