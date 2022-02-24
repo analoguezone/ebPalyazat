@@ -110,7 +110,7 @@ function Hero(props) {
       <VisibilityControl>
         <Box
           width={["100vw", "90vw"]}
-          height="100%"
+          height="calc(100%)"
           position="relative"
           margin="auto"
         >
