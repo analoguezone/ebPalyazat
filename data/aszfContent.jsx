@@ -82,12 +82,11 @@ export default withTranslation("common")(function aszf(props) {
           >
             2022. március 1., kedd reggel 8 órától, szűk egy hónapon át – 2022.
             március 27-e, vasárnap éjfélig - A Telekom Electronic Beats
-            projektje január 17. keddtől majdnem egy hónapon át, február 13-ig
-            várja olyan zenei producerek jelentkezését, akik szeretnék dalaikat
-            a világ elé tárni, igazolva azt, hogy a hazai zenéknek is bőven van
-            keresnivalójuk a nemzetközi mezőnyben - az elkészült válogatás
-            ugyanis valamennyi jelentős streaming platformon elérhetővé válik
-            majd tavasszal
+            projektje várja olyan zenei producerek jelentkezését, akik szeretnék
+            dalaikat a világ elé tárni, igazolva azt, hogy a hazai zenéknek is
+            bőven van keresnivalójuk a nemzetközi mezőnyben - az elkészült
+            válogatás ugyanis valamennyi jelentős streaming platformon
+            elérhetővé válik majd tavasszal.
           </Text>
           <Text
             fontFamily="TeleNeoWeb"
