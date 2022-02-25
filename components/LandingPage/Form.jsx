@@ -1,6 +1,12 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { useRouter } from "next/router";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import { registerLocale, setDefaultLocale } from "react-datepicker";
+import hu from "date-fns/locale/hu";
+registerLocale("hu", hu);
+
 import {
   Box,
   Stack,
@@ -10,6 +16,7 @@ import {
   Text,
   Divider,
   Img,
+  Input,
   Button,
   Heading,
   Grid,
@@ -370,16 +377,48 @@ export default function Form(props) {
                         fontSize="xs"
                         colSpan={["5", "2"]}
                       >
-                        <input
+                        {/* <input
+                          style={{ width: "100%", height: "100%" }}
                           onBlur={(e) => {
-                            handleUserInput(e);
-                            e.currentTarget.type = "text";
+                            if (!state.alkotas_keletkezesenek_idopontja) {
+                              e.current.type = "text";
+                            }
                           }}
+                          onChange={(e) => handleUserInput(e)}
+                    
                           type="text"
-                          onFocus={(e) => (e.currentTarget.type = "date")}
+                          onFocus={(e) => (e.current.type = "date")}
                           name="alkotas_keletkezesenek_idopontja"
                           placeholder={"Az alkotás keletkezésének időpontja*"}
+                        /> */}
+                        <DatePicker
+                          placeholderText="Az alkotás keletkezésének időpontja*"
+                          autocomplete="off"
+                          locale="hu-HU"
+                          dateFormat="yyyy.MM.dd"
+                          selected={state.alkotas_keletkezesenek_idopontja}
+                          onChange={(e) =>
+                            handleUserInput({
+                              target: {
+                                value: e,
+                                name: "alkotas_keletkezesenek_idopontja",
+                              },
+                            })
+                          }
+                          name="alkotas_keletkezesenek_idopontja"
                         />
+                        ;
+                        {/* <Input
+                          onBlur={(e) => {
+                            handleUserInput(e);
+                            // e.currentTarget.type = "text";
+                          }}
+                          // type="text"
+                          type="date"
+                          // onFocus={(e) => (e.currentTarget.type = "date")}
+                          name="alkotas_keletkezesenek_idopontja"
+                          placeholder={"Az alkotás keletkezésének időpontja*"}
+                        /> */}
                       </GridItem>
                       <GridItem
                         fontWeight="bold"
@@ -419,7 +458,7 @@ export default function Form(props) {
                         fontSize="xs"
                         colSpan={["5", "2"]}
                       >
-                        <input
+                        {/* <input
                           onBlur={(e) => {
                             handleUserInput(e);
                             e.currentTarget.type = "text";
@@ -430,6 +469,22 @@ export default function Form(props) {
                           }}
                           name="szuletesi_ido"
                           placeholder={"Születési idő*"}
+                        /> */}
+                        <DatePicker
+                          placeholderText="Születési idő*"
+                          autocomplete="off"
+                          locale="hu-HU"
+                          dateFormat="yyyy.MM.dd"
+                          selected={state.szuletesi_ido}
+                          onChange={(e) =>
+                            handleUserInput({
+                              target: {
+                                value: e,
+                                name: "szuletesi_ido",
+                              },
+                            })
+                          }
+                          name="szuletesi_ido"
                         />
                       </GridItem>
                       <GridItem
