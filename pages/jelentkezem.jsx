@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/MyLayout";
 import { withTranslation } from "../server/i18n";
 import dynamic from "next/dynamic";
+import "react-datepicker/dist/react-datepicker.css";
 const Form = dynamic(() => import("../components/LandingPage/Form"));
 
 const FormWrapper = function (props) {

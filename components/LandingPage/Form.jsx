@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { useRouter } from "next/router";
 import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+
 import { registerLocale, setDefaultLocale } from "react-datepicker";
 import hu from "date-fns/locale/hu";
 registerLocale("hu", hu);
