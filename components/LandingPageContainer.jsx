@@ -165,7 +165,7 @@ function LandingPageContainer(props) {
               <TLink href={"https://electronicbeats.hu"}>
                 Telekom Electronic Beats
               </TLink>{" "}
-              csapata ebből a megfontolásból újra aktivizálja magát, ami a hazai zenei tehetségek felkultatását illeti: szeretnék ismét láthatóvá tenni, milyen figyelemre méltó dolgok történnek a hazai kisstúdiókban és hálószobákban - és később sem elengedni az előadók kezét, hanem segíteni nekik a karrierjük egyengetésében.
+              csapata ebből a megfontolásból újra aktivizálja magát, ami a hazai zenei tehetségek felkutatását illeti: szeretnék ismét láthatóvá tenni, milyen figyelemre méltó dolgok történnek a hazai kisstúdiókban és hálószobákban - és később sem elengedni az előadók kezét, hanem segíteni nekik a karrierjük egyengetésében.
             </Text>
 
             <Text
