@@ -155,15 +155,20 @@ export default function Form(props) {
   function handleUserInput(e) {
     const name = e.target.name;
     const value = e.target.value;
-    if (name === "email") {
-      emailIsValid(value)
-        ? setError({ ...error, [name]: false })
-        : setError({ ...error, [name]: true });
-    }
-    if (e.target.type == "checkbox") {
-      setstate({ ...state, [name]: e.target.checked });
+    if (!value && name == "egyeb_info") {
+      setstate({ ...state, [name]: " " })
     } else {
-      setstate({ ...state, [name]: value });
+
+      if (name === "email") {
+        emailIsValid(value)
+          ? setError({ ...error, [name]: false })
+          : setError({ ...error, [name]: true });
+      }
+      if (e.target.type == "checkbox") {
+        setstate({ ...state, [name]: e.target.checked });
+      } else {
+        setstate({ ...state, [name]: value });
+      }
     }
   }
 
@@ -246,7 +251,7 @@ export default function Form(props) {
                             setsending(false);
                             onClose();
                           }}
-                          // backgroundColor="#001f60"
+                        // backgroundColor="#001f60"
                         >
                           Bezár
                         </Button>
@@ -583,7 +588,7 @@ export default function Form(props) {
                         </Select>
                       </GridItem>
                       {state.honnan_hallottal == "egyéb" ||
-                      state.honnan_hallottal == "hírportálon" ? (
+                        state.honnan_hallottal == "hírportálon" ? (
                         <GridItem
                           fontWeight="bold"
                           letterSpacing="2px"
