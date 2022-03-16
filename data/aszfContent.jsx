@@ -60,34 +60,8 @@ export default withTranslation("common")(function aszf(props) {
             Telekom Electronic Beats keresi a legjobb 2022-es dalokat, amikből
             újabb válogatáslemez készül
           </Heading>
-          <Text
-            fontFamily="TeleNeoWeb"
-            color="white"
-            fontSize={["md", "lg", "xl", "xl"]}
-            p={["10px 0vw", "10px 0vw"]}
-          >
-            A mögöttünk álló komor hónapokban sosem látott magasságokba csaptak
-            a világot behálózó kollektív stressz hullámai, úgyhogy ideje
-            nagyítót helyezni az alagútra, aminek a végén ott pislákol a fény: a
-            Telekom Electronic Beats csapata szeretné, ha újra látványosan
-            felragyogna a zenei kreativitás Napja Magyarország felett, szeretnék
-            újra láthatóvá tenni, hogy milyen figyelemreméltó dolgok történnek a
-            hazai kisstúdiókban és hálószobákban.
-          </Text>
-          <Text
-            fontFamily="TeleNeoWeb"
-            color="white"
-            fontSize={["md", "lg", "xl", "xl"]}
-            p={["10px 0vw", "10px 0vw"]}
-          >
-            2022. március 16., szerda reggel 8 órától, szűk egy hónapon át – 2022.
-            2022. április 10.-e, vasárnap éjfélig - A Telekom Electronic Beats
-            projektje várja olyan zenei producerek jelentkezését, akik szeretnék
-            dalaikat a világ elé tárni, igazolva azt, hogy a hazai zenéknek is
-            bőven van keresnivalójuk a nemzetközi mezőnyben - az elkészült
-            válogatás ugyanis valamennyi jelentős streaming platformon
-            elérhetővé válik majd tavasszal.
-          </Text>
+
+
           <Text
             fontFamily="TeleNeoWeb"
             color="white"
@@ -148,7 +122,7 @@ export default withTranslation("common")(function aszf(props) {
             <ListItem>
               <Text>
                 A pályázatra a Szervező kizárólag elektronikus úton várja a
-                jelentkezést 2022. március 16. reggel 8 órától 2022. 2022. április 10..
+                jelentkezést 2022. március 16. reggel 8 órától 2022. április 10..
                 éjfélig. Az elkészült alkotásokat az előre erre a célra
                 létrehozott weboldalra kell feltölteni.
               </Text>

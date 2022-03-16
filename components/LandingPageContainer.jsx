@@ -161,7 +161,7 @@ function LandingPageContainer(props) {
               w={["100vw", "90vw"]}
               p={["10px 4vw", "10px 4vw"]}
             >
-              Ami jó, azt a felszínre kell hozni. A
+              Ami jó, azt a felszínre kell hozni. A{" "}
               <TLink href={"https://electronicbeats.hu"}>
                 Telekom Electronic Beats
               </TLink>{" "}
@@ -178,7 +178,7 @@ function LandingPageContainer(props) {
               p={["10px 4vw", "10px 4vw"]}
             >
               Azért ismét, mert ez már a második felvonás lesz: az első alkalommal egy kiadótulajdonosból, dj-ből és zenei újságíróból álló szakmai zsűri részvételével
-              <TLink href={"https://www.electronicbeats.hu/sslteb001/"}>
+              <TLink href={"https://www.electronicbeats.hu/sslteb001/"}>{" "}
                 több mint hatszáz jelentkezőből válogattunk ki 30+1 zenészt,
                 akik felkerültek tripla válogatásunkra,
               </TLink> és most is ugyanebben a formátumban gondolkodnak. Az elbírálásban ezúttal a Telekom Electronic Beats tagjain kívül részt vesz majd az ország egyik legnagyobbat brillírozó rappere, BetonHofi, az elsöprő dalairól ismert Carson Coma, a Budapest-London tengelyen mozgó énekesnő, Solére, illetve a gépzenei közeg definitív alakjai: Tolo, LAU, Iamyank, és az EXILES kiadót navigáló Kolbenheyer Erik.
