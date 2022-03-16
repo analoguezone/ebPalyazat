@@ -7,6 +7,8 @@ import { registerLocale, setDefaultLocale } from "react-datepicker";
 import hu from "date-fns/locale/hu";
 registerLocale("hu", hu);
 
+import Link from "next/link";
+
 import {
   Box,
   Stack,
@@ -616,7 +618,7 @@ export default function Form(props) {
                           colorScheme="red"
                           color="white"
                         >
-                          A pályázati feltételeket elfogadom
+                          A <Link href="/feltetelek" ><span style={{ color: "#e20074" }} >pályázati feltételeket</span></Link> elfogadom
                         </Checkbox>
                       </GridItem>
                       <GridItem
