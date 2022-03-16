@@ -150,7 +150,7 @@ function LandingPageContainer(props) {
               p={["10px 4vw", "10px 4vw"]}
               pb={["20px", "40px"]}
             >
-              Március 1-től pop, klub és kísérletizene kategóriában várjuk a
+              Március 16-től pop, klub és kísérletizene kategóriában várjuk a
               jelentkezéseket.
             </Heading>
             <Text
@@ -207,8 +207,8 @@ function LandingPageContainer(props) {
               w={["100vw", "90vw"]}
               p={["10px 4vw", "10px 4vw"]}
             >
-              A Telekom Electronic Beats projektje március 1. keddtől majdnem
-              egy hónapon át, március 27-ig várja olyan zenei alkotók
+              A Telekom Electronic Beats projektje Március 16. keddtől majdnem
+              egy hónapon át, 2022. április 10.-ig várja olyan zenei alkotók
               jelentkezését, akik szeretnék dalaikat a világ elé tárni, igazolva
               azt, hogy a hazai zenéknek is bőven van keresnivalójuk a
               nemzetközi mezőnyben - az elkészült válogatás ugyanis valamennyi

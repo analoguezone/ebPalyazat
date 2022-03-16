@@ -80,8 +80,8 @@ export default withTranslation("common")(function aszf(props) {
             fontSize={["md", "lg", "xl", "xl"]}
             p={["10px 0vw", "10px 0vw"]}
           >
-            2022. március 1., kedd reggel 8 órától, szűk egy hónapon át – 2022.
-            március 27-e, vasárnap éjfélig - A Telekom Electronic Beats
+            2022. március 16., kedd reggel 8 órától, szűk egy hónapon át – 2022.
+            2022. április 10.-e, vasárnap éjfélig - A Telekom Electronic Beats
             projektje várja olyan zenei producerek jelentkezését, akik szeretnék
             dalaikat a világ elé tárni, igazolva azt, hogy a hazai zenéknek is
             bőven van keresnivalójuk a nemzetközi mezőnyben - az elkészült
@@ -148,7 +148,7 @@ export default withTranslation("common")(function aszf(props) {
             <ListItem>
               <Text>
                 A pályázatra a Szervező kizárólag elektronikus úton várja a
-                jelentkezést 2022. március 1. reggel 8 órától 2022. március 27.
+                jelentkezést 2022. március 16. reggel 8 órától 2022. 2022. április 10..
                 éjfélig. Az elkészült alkotásokat az előre erre a célra
                 létrehozott weboldalra kell feltölteni.
               </Text>
