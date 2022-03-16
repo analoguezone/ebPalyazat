@@ -150,8 +150,7 @@ function LandingPageContainer(props) {
               p={["10px 4vw", "10px 4vw"]}
               pb={["20px", "40px"]}
             >
-              Március 16-től pop, klub és kísérletizene kategóriában várjuk a
-              jelentkezéseket.
+              Március 16-tól pop, klub és kísérleti zene kategóriában várják a jelentkezéseket.
             </Heading>
             <Text
               // fontWeight="900"
@@ -162,16 +161,11 @@ function LandingPageContainer(props) {
               w={["100vw", "90vw"]}
               p={["10px 4vw", "10px 4vw"]}
             >
-              Lassan, de biztosan kijövünk a mögöttünk álló két furcsa év
-              alagútjából, aminek a végén most már ott pislákol a fény, és a{" "}
+              Ami jó, azt a felszínre kell hozni. A
               <TLink href={"https://electronicbeats.hu"}>
                 Telekom Electronic Beats
               </TLink>{" "}
-              csapata is újra aktivizálja magát, ami a hazai zenei tehetségek
-              felkultatását illeti: szeretnék ismét láthatóvá tenni, milyen
-              figyelemreméltó dolgok történnek a hazai kisstúdiókban és
-              hálószobákban - és később sem elengedni az előadók kezét, hanem
-              segíteni nekik a karrierjük egyengetésében.
+              csapata ebből a megfontolásból újra aktivizálja magát, ami a hazai zenei tehetségek felkultatását illeti: szeretnék ismét láthatóvá tenni, milyen figyelemre méltó dolgok történnek a hazai kisstúdiókban és hálószobákban - és később sem elengedni az előadók kezét, hanem segíteni nekik a karrierjük egyengetésében.
             </Text>
 
             <Text
@@ -183,20 +177,11 @@ function LandingPageContainer(props) {
               w={["100vw", "90vw"]}
               p={["10px 4vw", "10px 4vw"]}
             >
-              Azért ismét, mert ez már a második felvonás lesz: tavalyelőtt egy
-              kiadótulajdonosból, dj-ből és zenei újságíróból álló szakmai zsűri
-              részvételével{" "}
+              Azért ismét, mert ez már a második felvonás lesz: az első alkalommal egy kiadótulajdonosból, dj-ből és zenei újságíróból álló szakmai zsűri részvételével
               <TLink href={"https://www.electronicbeats.hu/sslteb001/"}>
                 több mint hatszáz jelentkezőből válogattunk ki 30+1 zenészt,
                 akik felkerültek tripla válogatásunkra,
-              </TLink>{" "}
-              és most is ugyanebben a formátumban gondolkodunk.Az elbírálásban
-              ezúttal a Telekom Electronic Beats tagjain kívül részt vesz majd
-              az ország egyik legnagyobbat brillírozó rappere, BetonHofi, az
-              elsöprő dalairól ismert Carson Coma, a budapesti-londoni tengelyen
-              mozgó énekesnő, Solére, illetve a gépzenei közeg definitív
-              alakjai: Tolo, LAU, Iamyank, és Kolbenheyer Erik az EXILES
-              kiadótól.
+              </TLink> és most is ugyanebben a formátumban gondolkodnak. Az elbírálásban ezúttal a Telekom Electronic Beats tagjain kívül részt vesz majd az ország egyik legnagyobbat brillírozó rappere, BetonHofi, az elsöprő dalairól ismert Carson Coma, a Budapest-London tengelyen mozgó énekesnő, Solére, illetve a gépzenei közeg definitív alakjai: Tolo, LAU, Iamyank, és az EXILES kiadót navigáló Kolbenheyer Erik.
             </Text>
             <Text
               // fontWeight="900"
@@ -207,12 +192,7 @@ function LandingPageContainer(props) {
               w={["100vw", "90vw"]}
               p={["10px 4vw", "10px 4vw"]}
             >
-              A Telekom Electronic Beats projektje Március 16. keddtől majdnem
-              egy hónapon át, 2022. április 10.-ig várja olyan zenei alkotók
-              jelentkezését, akik szeretnék dalaikat a világ elé tárni, igazolva
-              azt, hogy a hazai zenéknek is bőven van keresnivalójuk a
-              nemzetközi mezőnyben - az elkészült válogatás ugyanis valamennyi
-              jelentős streaming platformon elérhetővé válik majd ezt követően.
+              A Telekom Electronic Beats projektje március 16. szerdától majdnem egy hónapon át, április 10-ig várja olyan zenei alkotók jelentkezését, akik szeretnék dalaikat a világ elé tárni, igazolva azt, hogy a hazai zenéknek is bőven van keresnivalójuk a nemzetközi mezőnyben - az elkészült válogatás ugyanis valamennyi jelentős streaming platformon elérhetővé válik majd ezt követően.
             </Text>
             <Text
               // fontWeight="900"
@@ -223,13 +203,8 @@ function LandingPageContainer(props) {
               w={["100vw", "90vw"]}
               p={["10px 4vw", "10px 4vw"]}
             >
-              A három különböző műfajú albumra felkerülő fiatal tehetségek
-              ráadásul olyan jutalmakkal is gyarapodhatnak, mint egy további
-              alkotást segítő, Abletonnal felruházott Macbook Pro, ELLE különdíj
-              egy feltörekvő női előadónak, illetve fellépés a Telekom VOLT
-              Fesztiválon, vagy a Kolorádón. És lesznek olyan indulók is, akik
-              imPro képzéshez jutnak, hogy profi szakmai stáb segítségével
-              mélyíthessék el elektronikus zenei ismereteiket.
+              A három különböző műfajú albumra felkerülő fiatal tehetségek ráadásul olyan jutalmakkal is gyarapodhatnak, mint egy további alkotást segítő, Abletonnal felruházott Macbook Pro, ELLE különdíj egy feltörekvő női előadónak, illetve fellépés a Telekom VOLT Fesztiválon, vagy a Kolorádón. És lesznek olyan indulók is, akik imPro képzéshez jutnak, hogy profi szakmai stáb segítségével mélyíthessék el elektronikus zenei ismereteiket.
+
             </Text>
 
             <Text
@@ -241,12 +216,7 @@ function LandingPageContainer(props) {
               w={["100vw", "90vw"]}
               p={["10px 4vw", "10px 4vw"]}
             >
-              Lehet előkapni a félkész zenéket, leporolni a sávokat,
-              kölcsönkérni a szintit, elvonulni napokra a mikrofonállvány
-              árnyékába - a Telekom Electronic Beats digitális kiadója és
-              helyierő-támogató projektje, a SZELEKTOR napokon belül tárt
-              karokkal várja az érdekesebbnél érdekesebb trekiket, legyen az
-              2022 bunkertechnója vagy nyári slágere.
+              Lehet előkapni a félkész zenéket, leporolni a sávokat, kölcsönkérni a szintit, elvonulni napokra a mikrofonállvány árnyékába - a Telekom Electronic Beats digitális kiadója és helyierő-támogató projektje, a Szelektor napokon belül tárt karokkal várja az érdekesebbnél érdekesebb trekiket, legyen az 2022 bunkertechnója vagy nyári slágere.
             </Text>
           </VStack>
         </ContentBlockContainer>
