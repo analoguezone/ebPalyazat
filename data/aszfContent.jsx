@@ -20,9 +20,12 @@ import {
   ListItem,
 } from "@chakra-ui/react";
 
+import { NextSeo } from "next-seo";
+
 export default withTranslation("common")(function aszf(props) {
   return (
     <Layout {...props}>
+
       <div
         style={{
           margin: "50px auto",
@@ -31,6 +34,23 @@ export default withTranslation("common")(function aszf(props) {
           color: "white",
         }}
       >
+        <NextSeo
+          title="Electronic Beats | Szelektor 2022"
+          description="Electronic Beats tehetségkutató pályázat"
+          openGraph={{
+            title: "Szelektor| Electronic Beats",
+            description: "Electronic Beats tehetségkutató pályázat",
+            images: [
+              {
+                url: `/images/eb/electronicbeats-12.jpg`,
+                width: 1280,
+                height: 634,
+                alt: "Electronic Beats | Szelektor 2022",
+              },
+            ],
+            site_name: "Electronic Beats",
+          }}
+        />
         <Box
           padding={["50px 25px", "50px"]}
           margin="50px auto"
@@ -343,7 +363,7 @@ export default withTranslation("common")(function aszf(props) {
                   </Text>
                 </ListItem>{" "}
                 <ListItem>
-                  <Text>Popping – Carson Coma, BetonHofi, Solere Zsófi; </Text>
+                  <Text>Popping – Carson Coma, Beton.Hofi, Solere Zsófi; </Text>
                 </ListItem>{" "}
                 <ListItem>
                   <Text>

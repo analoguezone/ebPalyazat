@@ -11,8 +11,7 @@ import { NextSeo } from "next-seo";
 
 import Image from "next/image";
 import { useRouter } from "next/router";
-import Form from "../components/LandingPage/Form";
-import Organizer from "./Organizer";
+
 
 import {
   Box,
@@ -181,7 +180,7 @@ function LandingPageContainer(props) {
               <TLink href={"https://www.electronicbeats.hu/sslteb001/"}>{" "}
                 több mint hatszáz jelentkezőből válogattunk ki 30+1 zenészt,
                 akik felkerültek tripla válogatásunkra,
-              </TLink> és most is ugyanebben a formátumban gondolkodnak. Az elbírálásban ezúttal a Telekom Electronic Beats tagjain kívül részt vesz majd az ország egyik legnagyobbat brillírozó rappere, BetonHofi, az elsöprő dalairól ismert Carson Coma, a Budapest-London tengelyen mozgó énekesnő, Solére, illetve a gépzenei közeg definitív alakjai: Tolo, LAU, Iamyank, és az EXILES kiadót navigáló Kolbenheyer Erik.
+              </TLink> és most is ugyanebben a formátumban gondolkodnak. Az elbírálásban ezúttal a Telekom Electronic Beats tagjain kívül részt vesz majd az ország egyik legnagyobbat brillírozó rappere, Beton.Hofi, az elsöprő dalairól ismert Carson Coma, a Budapest-London tengelyen mozgó énekesnő, Solére, illetve a gépzenei közeg definitív alakjai: Tolo, LAU, Iamyank, és az EXILES kiadót navigáló Kolbenheyer Erik.
             </Text>
             <Text
               // fontWeight="900"

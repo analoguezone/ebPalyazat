@@ -19,9 +19,29 @@ import {
   UnorderedList,
   ListItem,
 } from "@chakra-ui/react";
+
+import { NextSeo } from "next-seo";
+
 export default withTranslation("common")(function privacyData(props) {
   return (
     <Layout {...props}>
+      <NextSeo
+        title="Electronic Beats | Szelektor 2022"
+        description="Electronic Beats tehetségkutató pályázat"
+        openGraph={{
+          title: "Szelektor| Electronic Beats",
+          description: "Electronic Beats tehetségkutató pályázat",
+          images: [
+            {
+              url: `/images/eb/electronicbeats-12.jpg`,
+              width: 1280,
+              height: 634,
+              alt: "Electronic Beats | Szelektor 2022",
+            },
+          ],
+          site_name: "Electronic Beats",
+        }}
+      />
       <div
         style={{
           margin: "50px auto",
@@ -31,7 +51,7 @@ export default withTranslation("common")(function privacyData(props) {
         }}
       >
         <Box
-          padding={["50px 25px","50px"]}
+          padding={["50px 25px", "50px"]}
           margin="50px auto"
           width={["100vw"]}
           maxW="1280px"
@@ -85,7 +105,7 @@ export default withTranslation("common")(function privacyData(props) {
             templateColumns="repeat(4, 1fr)"
             gap={1}
             fontSize={["md", "lg", "xl", "xl"]}
-          
+
           >
             <GridItem colSpan={1} bg="#383838">
               <Text p="2">Az adatkezelés célja</Text>
