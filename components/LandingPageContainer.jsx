@@ -102,7 +102,7 @@ function LandingPageContainer(props) {
           description: "Electronic Beats tehetségkutató pályázat",
           images: [
             {
-              url: `/images/eb/electronicbeats-12.jpg`,
+              url: `/images/eb/Electronic_KV_Grey_NEW_LOGO-06-min`,
               width: 1280,
               height: 634,
               alt: "Electronic Beats | Szelektor 2022",
