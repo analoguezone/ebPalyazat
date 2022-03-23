@@ -215,7 +215,7 @@ function LandingPageContainer(props) {
               w={["100vw", "90vw"]}
               p={["10px 4vw", "10px 4vw"]}
             >
-              Lehet előkapni a félkész zenéket, leporolni a sávokat, kölcsönkérni a szintit, elvonulni napokra a mikrofonállvány árnyékába - a Telekom Electronic Beats digitális kiadója és helyierő-támogató projektje, a Szelektor napokon belül tárt karokkal várja az érdekesebbnél érdekesebb trekiket, legyen az 2022 bunkertechnója vagy nyári slágere.
+              Lehet előkapni a félkész zenéket, leporolni a sávokat, kölcsönkérni a szintit, elvonulni napokra a mikrofonállvány árnyékába - a Telekom Electronic Beats digitális kiadója és helyierő-támogató projektje, a Szelektor tárt karokkal várja az érdekesebbnél érdekesebb trekiket, legyen az 2022 bunkertechnója vagy nyári slágere.
             </Text>
           </VStack>
         </ContentBlockContainer>
