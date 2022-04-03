@@ -530,7 +530,7 @@ export default function Form(props) {
                           type="text"
                           onBlur={handleUserInput}
                           name="soundcloud_link"
-                          placeholder={"SoundCloud link*"}
+                          placeholder={"A pályamű Soundcloud linkje*"}
                         />
                       </GridItem>
                       <GridItem

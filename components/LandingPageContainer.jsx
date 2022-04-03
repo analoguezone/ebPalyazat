@@ -149,7 +149,7 @@ function LandingPageContainer(props) {
               p={["10px 4vw", "10px 4vw"]}
               pb={["20px", "40px"]}
             >
-              Március 16-tól pop, klub és kísérleti zene kategóriában várják a jelentkezéseket.
+              Pop, klub és kísérleti zene kategóriában várják a jelentkezéseket április 10-ig.
             </Heading>
             <Text
               // fontWeight="900"
