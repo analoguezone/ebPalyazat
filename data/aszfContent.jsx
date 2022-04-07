@@ -222,22 +222,19 @@ export default withTranslation("common")(function aszf(props) {
             </ListItem>
             <ListItem>
               <Text>
-                A Pályázónak a Szervező feltöltő oldalán nyilatkoznia kell, hogy
-                az elkészült és a Szervező részére megküldött zene eredeti, és
-                nem sért semmilyen szerzői jogi jogszabályt, továbbá a zenei mű
-                létrehozásának és felhasználásának jogi akadálya nincs. A
-                Pályázó felelős továbbá azért is, hogy az általa készített
-                versenyműre vonatkozóan harmadik személyek szerzői joga vagy
-                személyiségi joga nem áll fenn, a versenyműben megjelenő
-                termékek és szolgáltatások nevének és esetleges védjegyének
-                szerepeltetéséhez engedéllyel rendelkezik, továbbá a
-                versenyműben szereplő harmadik személyek a versenymű
-                elkészítéséhez és közzétételéhez hozzájárultak. Amennyiben a
-                Pályázó a versenyműben zenét vagy egyéb szerzői- és szomszédos
-                jogi védelem alá eső művet használ fel, melyre vonatkozóan a
-                szükséges felhasználási jogosultságokkal nem rendelkezik és azt
-                nem igazolja, tudomásul veszi, hogy a Szervező a versenyművét
-                jogosult kizárni a pályázatból.
+                A Pályázónak a Szervező feltöltő oldalán nyilatkoznia kell, hogy az elkészült és a
+                Szervező részére megküldött zene eredeti, és nem sért semmilyen szerzői jogi
+                jogszabályt, továbbá a zenei mű létrehozásának és felhasználásának jogi akadálya
+                nincs. A Pályázó felelős továbbá azért is, hogy az általa készített versenyműre
+                vonatkozóan harmadik személyek szerzői joga vagy személyiségi joga nem áll fenn,
+                a versenyműben megjelenő termékek és szolgáltatások nevének és esetleges
+                védjegyének szerepeltetéséhez engedéllyel rendelkezik, továbbá a versenyműben
+                szereplő harmadik személyek a versenymű elkészítéséhez és közzétételéhez
+                hozzájárultak, és hogy a megküldött zene eredeti, hivatalos kiadásban nem jelent
+                meg. Amennyiben a Pályázó a versenyműben zenét vagy egyéb szerzői- és
+                szomszédos jogi védelem alá eső művet használ fel, melyre vonatkozóan a
+                szükséges felhasználási jogosultságokkal nem rendelkezik és azt nem igazolja,
+                tudomásul veszi, hogy a Szervező a versenyművét jogosult kizárni a pályázatból.
               </Text>
             </ListItem>
             <ListItem>
@@ -270,6 +267,9 @@ export default withTranslation("common")(function aszf(props) {
                     a Pályázó nem felel meg a pályázati felhívásban szereplő
                     feltételeknek vagy a pályázati feltételeket megsérti
                   </Text>
+                </ListItem>{" "}
+                <ListItem>
+                  <Text>a Pályázó korábban már kiadott, megjelent dalt nevez,</Text>
                 </ListItem>{" "}
                 <ListItem>
                   <Text>a pályázat határidőre nem érkezett meg,</Text>
